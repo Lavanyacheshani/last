@@ -10,7 +10,7 @@ export const tourCategories = [
         id: "anuradhapura",
         name: "Anuradhapura",
         description: "The ancient capital, home to sacred Bodhi Tree and massive stupas.",
-        image: "/placeholder.svg?height=400&width=600&text=Anuradhapura",
+        image: "/tour/1.jpg",
         images: [
           "/placeholder.svg?height=600&width=800&text=Anuradhapura+1",
           "/placeholder.svg?height=600&width=800&text=Anuradhapura+2",
@@ -29,7 +29,7 @@ export const tourCategories = [
         id: "polonnaruwa",
         name: "Polonnaruwa",
         description: "UNESCO site showcasing well-preserved ruins of medieval Sri Lanka.",
-        image: "/placeholder.svg?height=400&width=600&text=Polonnaruwa",
+        image: "/tour/2.jpg",
         images: [
           "/placeholder.svg?height=600&width=800&text=Polonnaruwa+1",
           "/placeholder.svg?height=600&width=800&text=Polonnaruwa+2",
@@ -48,7 +48,7 @@ export const tourCategories = [
         id: "dambulla",
         name: "Dambulla Rock Cave Temple",
         description: "A spiritual cave temple with Buddhist murals and statues.",
-        image: "/placeholder.svg?height=400&width=600&text=Dambulla",
+        image: "/tour/3.jpg",
         images: [
           "/placeholder.svg?height=600&width=800&text=Dambulla+1",
           "/placeholder.svg?height=600&width=800&text=Dambulla+2",
@@ -67,7 +67,7 @@ export const tourCategories = [
         id: "sigiriya",
         name: "Sigiriya",
         description: "Iconic Lion Rock fortress with frescoes and royal gardens.",
-        image: "/placeholder.svg?height=400&width=600&text=Sigiriya",
+        image: "/tour/4.jpg",
         images: [
           "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
           "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
@@ -86,7 +86,7 @@ export const tourCategories = [
         id: "kandy",
         name: "Kandy",
         description: "Sacred city with the Temple of the Tooth and vibrant cultural shows.",
-        image: "/placeholder.svg?height=400&width=600&text=Kandy",
+        image: "/tour/5.PNG",
         images: [
           "/placeholder.svg?height=600&width=800&text=Kandy+1",
           "/placeholder.svg?height=600&width=800&text=Kandy+2",
@@ -105,7 +105,7 @@ export const tourCategories = [
       id: "ambuluwawa",
       name: "Ambuluwawa Tower",
       description: "Unique spiral tower offering panoramic views and biodiversity.",
-      image: "/placeholder.svg?height=400&width=600&text=Ambuluwawa",
+      image: "/tour/6.PNG",
       images: [
           "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
           "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
@@ -123,7 +123,7 @@ export const tourCategories = [
       id: "colombo",
       name: "Colombo",
       description: "Bustling capital blending colonial charm and modern vibes.",
-      image: "/placeholder.svg?height=400&width=600&text=Colombo",
+      image: "/tour/7.jpg",
       images: [
           "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
           "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
@@ -141,7 +141,7 @@ export const tourCategories = [
       id: "galle",
       name: "Galle Fort",
       description: "17th-century Dutch fortress with coastal charm and cobbled streets.",
-      image: "/placeholder.svg?height=400&width=600&text=Galle+Fort",
+      image: "/tour/8.jpg",
       images: [
           "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
           "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
@@ -159,7 +159,7 @@ export const tourCategories = [
       id: "dabana",
       name: "Dabana Indigenous Village",
       description: "Discover Sri Lanka’s Veddah community and traditions.",
-      image: "/placeholder.svg?height=400&width=600&text=Dabana",
+      image: "/tour/9.PNG",
       images: [
           "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
           "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
@@ -177,7 +177,7 @@ export const tourCategories = [
       id: "pinnawala",
       name: "Pinnawala Elephant Orphanage",
       description: "Sanctuary for rescued elephants, ideal for close encounters.",
-      image: "/placeholder.svg?height=400&width=600&text=Pinnawala",
+      image: "/tour/10.jpg",
       images: [
           "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
           "/placeholder.svg?height=600&width=800&text=Sigiriya+2",

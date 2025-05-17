@@ -11,6 +11,8 @@ import { FeedbackButton } from "@/components/feedback-button"
 import { BackButton } from "@/components/back-button"
 import { useLanguage } from "@/components/language-context"
 import { motion } from "framer-motion"
+import { useParams } from "next/navigation"
+
 import {
   Calendar,
   Camera,
@@ -32,7 +34,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 const destinationsData = {
   galle: {
     name: "Galle",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/des/gh.jpg",
     themeBg: "beach",
     description: "Historic coastal city with a magnificent Dutch fort, colonial architecture, and beautiful beaches.",
     fullDescription: `Galle is a jewel of a city located on the southwestern coast of Sri Lanka. Its crown jewel is the UNESCO World Heritage-listed Galle Fort, built by the Portuguese in the 16th century and later extensively fortified by the Dutch in the 17th century. Walking through the fort's narrow streets feels like stepping back in time, with well-preserved colonial buildings, churches, and mansions lining the cobblestone streets.
@@ -66,42 +68,41 @@ const destinationsData = {
       },
     ],
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-    ],
+    "/des/g11.jpg",
+    "/des/g12.jpg",
+    "/des/g13.jpg",
+    "/des/g14.jpg",    ],
     thingsToDo: [
       {
         title: "Walk along the ramparts of Galle Fort at sunset",
         description:
           "Experience breathtaking views of the ocean and city as the sun sets over the historic fort walls.",
-        image: "/placeholder.svg?height=300&width=400&text=Galle+Fort+Sunset",
+        image: "/des/g1.jpg",
       },
       {
         title: "Shop for handmade lace, gems, and crafts",
         description: "Explore the boutiques within the fort to find unique souvenirs and locally made crafts.",
-        image: "/placeholder.svg?height=300&width=400&text=Galle+Crafts",
+        image: "/des/g2.jpg",
       },
       {
         title: "Visit the Historical Mansion Museum",
         description: "See antiques and colonial artifacts that showcase the rich history of Galle.",
-        image: "/placeholder.svg?height=300&width=400&text=Mansion+Museum",
+        image: "/des/g3.jpg",
       },
       {
         title: "Take a cooking class to learn Sri Lankan cuisine",
         description: "Learn to prepare authentic Sri Lankan dishes with local ingredients and traditional methods.",
-        image: "/placeholder.svg?height=300&width=400&text=Cooking+Class",
+        image: "/des/g4.jpg",
       },
       {
         title: "Enjoy fresh seafood at oceanfront restaurants",
         description: "Savor delicious seafood while enjoying views of the Indian Ocean.",
-        image: "/placeholder.svg?height=300&width=400&text=Seafood+Dining",
+        image: "/des/g5.jpg",
       },
       {
         title: "Go whale watching from nearby Mirissa",
         description: "Take a boat tour to spot blue whales, sperm whales, and dolphins in their natural habitat.",
-        image: "/placeholder.svg?height=300&width=400&text=Whale+Watching",
+        image: "/des/g6.jpg",
       },
     ],
     popularActivities: [
@@ -115,7 +116,7 @@ const destinationsData = {
   },
   ella: {
     name: "Ella",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/des/e.jpg",
     themeBg: "mountain",
     description: "A scenic highland escape with famous hikes like Ella Rock and Little Adam's Peak.",
     fullDescription: `Ella is a small, laid-back mountain town nestled in the misty highlands of Sri Lanka's Hill Country. Surrounded by lush green mountains, tea plantations, and cascading waterfalls, Ella has become a favorite destination for travelers seeking natural beauty and outdoor adventures.
@@ -995,11 +996,10 @@ const getThemeBackground = (theme: string) => {
 }
 
 export default function DestinationPage({ params }: { params: { slug: string } }) {
-  const { slug } = params
+  const { slug } = useParams()
   const destination = destinationsData[slug as keyof typeof destinationsData]
   const { t } = useLanguage()
   const [isLoading, setIsLoading] = useState(true)
-
   useEffect(() => {
     // Simulate loading delay
     const timer = setTimeout(() => {

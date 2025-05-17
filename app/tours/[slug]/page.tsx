@@ -44,8 +44,46 @@ const activitiesData = {
     ],
     category: "water",
   },
+  
   "madu-ganga": {
     name: "Madu Ganga",
+    image: "/placeholder.svg?height=800&width=1600&text=Madu+Ganga",
+    description: "Scenic river safari through mangroves with rich biodiversity and island visits.",
+    fullDescription: `Madu Ganga is a complex coastal ecosystem of mangroves and islands that exists in perfect balance with human activity. This river estuary spans 915 hectares and is home to 64 islands, creating a breathtaking labyrinth of waterways to explore.
+
+    The area has been designated as a Ramsar Wetland due to its significant biodiversity, hosting over 300 species of plants and 248 species of vertebrate animals. The mangrove ecosystem plays a crucial role in coastal erosion protection and acts as a natural fish nursery.
+
+    A boat safari through Madu Ganga offers visitors the chance to witness traditional fishing methods, visit cinnamon plantations, explore Buddhist temples on islands, and observe the diverse wildlife that calls this ecosystem home. The area is particularly known for its bird watching opportunities, with numerous endemic and migratory species.`,
+    highlights: [
+      "Boat Safari - Cruise through narrow mangrove tunnels and open waterways",
+      "Cinnamon Island - Visit a working cinnamon plantation and see traditional processing",
+      "Fish Therapy - Experience natural fish spa treatments in designated areas",
+      "Buddhist Temple - Visit the ancient temple located on one of the islands",
+      "Biodiversity - Observe various bird species, monitor lizards, and other wildlife",
+    ],
+    activities: [
+      "Boat safari through mangrove forests",
+      "Visit to Cinnamon Island to see traditional cinnamon peeling",
+      "Fish therapy (natural fish spa)",
+      "Bird watching for endemic and migratory species",
+      "Visit to local cottage industries on islands",
+      "Photography of unique ecosystems",
+      "Swimming in designated areas",
+    ],
+    bestTime:
+      "The area can be visited year-round, but the dry season (December to April) offers more comfortable conditions with less rainfall.",
+    tips: [
+      "Early morning or late afternoon boat rides offer the best wildlife viewing opportunities",
+      "Bring insect repellent, especially during dawn and dusk hours",
+      "Wear a hat and sunscreen as boat rides provide limited shade",
+      "Negotiate boat prices in advance or book through a reputable tour operator",
+      "Consider a longer boat ride (2+ hours) to explore more remote areas",
+      "Bring small denominations for tipping guides and purchasing local crafts",
+    ],
+    category: "water",
+  },
+  "kalu-ganga": {
+    name: "Kalu Ganga",
     image: "/placeholder.svg?height=800&width=1600&text=Madu+Ganga",
     description: "Scenic river safari through mangroves with rich biodiversity and island visits.",
     fullDescription: `Madu Ganga is a complex coastal ecosystem of mangroves and islands that exists in perfect balance with human activity. This river estuary spans 915 hectares and is home to 64 islands, creating a breathtaking labyrinth of waterways to explore.

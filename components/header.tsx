@@ -46,9 +46,7 @@ export function Header() {
             <Link href="/#packages" className="text-gray-700 hover:text-emerald-600 font-medium">
               {t?.packages || "Travel Packages"}
             </Link>
-            <Link href="/gallery" className="text-gray-700 hover:text-emerald-600 font-medium">
-              {t?.gallery || "Gallery"}
-            </Link>
+            
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
@@ -100,13 +98,7 @@ export function Header() {
             >
               {t?.packages || "Travel Packages"}
             </Link>
-            <Link
-              href="/gallery"
-              className="block text-gray-700 hover:text-emerald-600 font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t?.gallery || "Gallery"}
-            </Link>
+            
             <div className="pt-2 flex flex-col space-y-2">
               <LanguageSwitcher />
               <SriLankaTime />

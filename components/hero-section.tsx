@@ -5,40 +5,44 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import { useLanguage } from "./language-context"
+
 
 export function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
+    const { t } = useLanguage()
+
 
   const slides = [
     {
       image: "/hero/1.jpg",
-      alt: "Sigiriya Rock Fortress",
-      title: "Climb the Majestic Sigiriya Rock",
+      alt: t?.heroSlideAlt_sigiriya || "Sigiriya Rock Fortress",
+      title: t?.heroSlideTitle_sigiriya || "Climb the Majestic Sigiriya Rock",
     },
     {
       image: "/hero/2.jpg",
-      alt: "Nine Arch Bridge in Ella",
-      title: "Witness the Beauty of Nine Arch Bridge",
+      alt: t?.heroSlideAlt_nineArch || "Nine Arch Bridge in Ella",
+      title: t?.heroSlideTitle_nineArch || "Witness the Beauty of Nine Arch Bridge",
     },
     {
       image: "/hero/3.jpg",
-      alt: "Tropical Beach in Sri Lanka",
-      title: "Relax on Stunning Sri Lankan Beaches",
+      alt: t?.heroSlideAlt_beaches || "Tropical Beach in Sri Lanka",
+      title: t?.heroSlideTitle_beaches || "Relax on Stunning Sri Lankan Beaches",
     },
     {
       image: "/hero/4.jpg",
-      alt: "Lush Tea Estates in Nuwara Eliya",
-      title: "Wander Through Lush Tea Plantations",
+      alt: t?.heroSlideAlt_teaPlantations || "Lush Tea Estates in Nuwara Eliya",
+      title: t?.heroSlideTitle_teaPlantations || "Wander Through Lush Tea Plantations",
     },
     {
       image: "/hero/5.jpg",
-      alt: "Elephants in Sri Lankan Wildlife Park",
-      title: "Experience Elephant Safaris in the Wild",
+      alt: t?.heroSlideAlt_elephantSafari || "Elephants in Sri Lankan Wildlife Park",
+      title: t?.heroSlideTitle_elephantSafari || "Experience Elephant Safaris in the Wild",
     },
     {
       image: "/hero/6.jpg",
-      alt: "Dalada Perahera Festival in Kandy",
-      title: "Celebrate Culture at the Dalada Perahera",
+      alt: t?.heroSlideAlt_daladaPerahera || "Dalada Perahera Festival in Kandy",
+      title: t?.heroSlideTitle_daladaPerahera || "Celebrate Culture at the Dalada Perahera",
     },
   ]
 
@@ -118,7 +122,7 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Experience the beauty and culture of Sri Lanka with the island's leading travel agency
+              {t?.heroSubtitle || "Experience the beauty and culture of Sri Lanka with the island's leading travel agency"}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -130,7 +134,7 @@ export function HeroSection() {
                 size="lg"
                 className="bg-gradient-to-r from-maroon-600 to-maroon-800 hover:from-maroon-700 hover:to-maroon-900 text-white px-8 py-7 text-lg md:text-xl shadow-xl hover:shadow-maroon-700/30 transition-all duration-300 rounded-full group"
               >
-                <a href="#booking">Book Your Tour Now</a>
+                <a href="#booking">{t?.bookNow || "Book Your Tour Now"}</a>
               </Button>
             </motion.div>
           </motion.div>

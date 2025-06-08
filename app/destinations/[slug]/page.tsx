@@ -159,32 +159,37 @@ const destinationsData = {
       {
         title: "Take the scenic train journey from Ella to Kandy",
         description: "Experience one of the world's most beautiful train rides through tea plantations and mountains.",
-        image: "/placeholder.svg?height=300&width=400&text=Ella+Train",
+        image: "/des/e1.jpg",
       },
       {
         title: "Hike to Ella Rock for sunrise views",
         description: "Challenge yourself with this 4-hour hike to witness a spectacular sunrise over the mountains.",
-        image: "/placeholder.svg?height=300&width=400&text=Ella+Rock",
+        image: "/des/e2.jpg",
       },
       {
         title: "Visit a tea factory to learn about tea production",
         description: "Discover the process of making Ceylon tea from plucking to processing and enjoy a tasting.",
-        image: "/placeholder.svg?height=300&width=400&text=Tea+Factory",
+        image: "/des/e3.jpg",
       },
       {
         title: "Explore the Ravana Cave",
         description: "Visit the cave associated with the Ramayana legend where Ravana is said to have hidden Sita.",
-        image: "/placeholder.svg?height=300&width=400&text=Ravana+Cave",
+        image: "/des/e4.jpg",
       },
       {
         title: "Try local cuisine at restaurants in town",
         description: "Sample authentic Sri Lankan dishes at the many restaurants along Ella's main street.",
-        image: "/placeholder.svg?height=300&width=400&text=Ella+Cuisine",
+        image: "/des/e5.jpg",
       },
       {
-        title: "Take a cooking class to learn Sri Lankan recipes",
-        description: "Learn to prepare traditional Sri Lankan dishes using fresh local ingredients.",
-        image: "/placeholder.svg?height=300&width=400&text=Cooking+Class",
+        title: "Swing at the Famous Ella Swing",
+        description: "Get your adrenaline pumping and capture stunning views as you swing over the lush hills of Ella.",
+        image: "/des/e6.jpg", 
+      },
+      {
+        title: "Fly the Flying Ravana Mega Zipline",
+        description: "Soar over tea estates and forested hills on one of South Asia’s longest and fastest ziplines.",
+        image: "/des/e7.jpg", 
       },
     ],
     popularActivities: [

@@ -1,15 +1,26 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 export function BookingForm() {
   const [formData, setFormData] = useState({
@@ -25,6 +36,8 @@ export function BookingForm() {
     packageType: "",
     destinations: [] as string[],
   })
+
+  const [submitting, setSubmitting] = useState(false)
 
   const destinations = [
     "Galle",
@@ -49,7 +62,6 @@ export function BookingForm() {
   const handleDestinationChange = (destination: string) => {
     setFormData((prev) => {
       const newDestinations = [...prev.destinations]
-
       if (newDestinations.includes(destination)) {
         return {
           ...prev,
@@ -64,18 +76,57 @@ export function BookingForm() {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // In a real application, you would send this data to your backend
-    console.log("Form submitted:", formData)
-    alert("Thank you for your booking request! We will contact you shortly.")
+    setSubmitting(true)
+
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwUY6JZ4k1P37mcSEEGvLSmhCg9-dj07l4L3YCnHAOsOV61fx9HKzjKqq3-hm3FyR9YEA/exec"
+
+    const payload = {
+      ...formData,
+      destinations: formData.destinations.join(", "),
+    }
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        mode: "no-cors", // Important for Google Apps Script
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      })
+
+      alert("Thank you for your booking request! We will contact you shortly.")
+      setFormData({
+        name: "",
+        email: "",
+        nationality: "",
+        phone: "",
+        arrivalDate: "",
+        duration: "",
+        adults: "",
+        children: "",
+        comments: "",
+        packageType: "",
+        destinations: [],
+      })
+    } catch (error) {
+      alert("Something went wrong. Please try again.")
+      console.error("Error submitting form:", error)
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
     <section className="py-16 bg-white" id="booking">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Book Your Sri Lankan Adventure</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Book Your Sri Lankan Adventure
+          </h2>
           <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
             Fill out the form below to start planning your perfect Sri Lankan journey. No card payments required at this
@@ -189,7 +240,10 @@ export function BookingForm() {
 
               <div className="space-y-2">
                 <Label htmlFor="package">Package Type</Label>
-                <Select onValueChange={(value) => setFormData({ ...formData, packageType: value })}>
+                <Select
+                  value={formData.packageType}
+                  onValueChange={(value) => setFormData({ ...formData, packageType: value })}
+                >
                   <SelectTrigger>
                     <SelectValue placeholder="Select a package" />
                   </SelectTrigger>
@@ -230,8 +284,8 @@ export function BookingForm() {
                 />
               </div>
 
-              <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700">
-                Submit Booking Request
+              <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700" disabled={submitting}>
+                {submitting ? "Submitting..." : "Submit Booking Request"}
               </Button>
 
               <p className="text-xs text-gray-500 text-center">

@@ -25,7 +25,7 @@ export function Header() {
                 }
               }}
             >
-              Explorative Tours
+              {t?.brandName || "Explorative Tours"}
             </Link>
           </div>
 

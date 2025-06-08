@@ -2,29 +2,29 @@
 
 import Image from "next/image"
 import { SectionHeading } from "@/components/section-heading"
+import { useLanguage } from "./language-context"
 
 export function IntroSection() {
+  const { t } = useLanguage()
 
   return (
     <section className="py-16 bg-white relative" id="about">
       <div className="container mx-auto px-4">
-        <SectionHeading title="Welcome to Explorative Tours!" decorative={true} />
+        <SectionHeading title={t?.introTitle || "Welcome to Explorative Tours!"} decorative={true} />
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Text Content */}
           <div className="space-y-6">
             <p className="text-gray-700 leading-relaxed">
-            As one of Sri Lanka’s leading travel agencies, we are committed to providing you with an unforgettable travel experience on the island. We offer access to the finest hotels, top tourist attractions, and exciting adventure activities, always prioritizing your comfort and satisfaction.
-            
+              {t?.introParagraph1 || "As one of Sri Lanka’s leading travel agencies, we are committed to providing you with an unforgettable travel experience on the island. We offer access to the finest hotels, top tourist attractions, and exciting adventure activities, always prioritizing your comfort and satisfaction."}
             </p>
             <p className="text-gray-700 leading-relaxed">
-            With Explorative Tours, you can enjoy a safe journey filled with rich experiences at an affordable cost. If you're looking to break away from the ordinary and embrace a fresh, unique travel adventure, we are the perfect choice for you.
+              {t?.introParagraph2 || "With Explorative Tours, you can enjoy a safe journey filled with rich experiences at an affordable cost. If you're looking to break away from the ordinary and embrace a fresh, unique travel adventure, we are the perfect choice for you."}
             </p>
             <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-lg border-l-4 border-emerald-600 shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">About Us</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">{t?.about || "About Us"}</h3>
               <p className="text-gray-700">
-                We are the premier travel agency in Sri Lanka, offering special protection and services. Our mission is
-                to provide maximum travel experience while ensuring your safety and enjoyment.
+                {t?.introAboutBoxText || "We are the premier travel agency in Sri Lanka, offering special protection and services. Our mission is to provide maximum travel experience while ensuring your safety and enjoyment."}
               </p>
             </div>
           </div>
@@ -34,7 +34,7 @@ export function IntroSection() {
             <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
                 src="/aboutus.png"
-                alt="Sri Lankan landscape"
+                alt={t?.introImageAlt || "Sri Lankan landscape"}
                 fill
                 className="object-cover"
               />
@@ -49,7 +49,7 @@ export function IntroSection() {
               <div className="flex h-full flex-col items-center justify-center text-center space-y-2">
                 
                 <div className="text-4xl font-bold">10+</div>
-                <div className="text-sm">{("Years Of Experience")}</div>
+                <div className="text-sm">{t?.introYearsExperience || "Years Of Experience"}</div>
               </div>
             </div>
 
@@ -58,7 +58,7 @@ export function IntroSection() {
               
               <div className="text-center">
                 <div className="text-xl font-bold">500+</div>
-                <div className="text-[10px] leading-tight">{("Happy Clients")}</div>
+                <div className="text-[10px] leading-tight">{t?.introHappyClients || "Happy Clients"}</div>
               </div>
             </div>
           </div>

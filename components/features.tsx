@@ -3,14 +3,16 @@
 import { useEffect, useRef } from "react"
 import { motion, useAnimation, useInView } from "framer-motion"
 import { Shield, Compass, Clock, Award, Users, Heart } from "lucide-react"
+import { useLanguage } from "./language-context"
 
 const Features = () => {
+  const { t } = useLanguage()
 
   const features = [
     {
       icon: <Shield className="h-5 w-5 md:h-6 md:w-6" />,
-      title: ("Safe Travel"),
-      description:
+      title: t?.feature_safeTravel_title || "Safe Travel",
+      description: t?.feature_safeTravel_desc ||
         "Travel with complete peace of mind — we prioritize your safety with vetted drivers, modern vehicles, and 24/7 support.",
       color: "bg-emerald-100 text-emerald-700",
       gradient: "from-emerald-600 via-emerald-400 to-emerald-300",
@@ -18,8 +20,8 @@ const Features = () => {
     },
     {
       icon: <Compass className="h-5 w-5 md:h-6 md:w-6" />,
-      title: ("Expert Guides"),
-      description:
+      title: t?.feature_expertGuides_title || "Expert Guides",
+      description: t?.feature_expertGuides_desc ||
         "Our local guides are storytellers and cultural ambassadors who bring Sri Lanka’s rich heritage to life.",
       color: "bg-amber-100 text-amber-700",
       gradient: "from-amber-600 via-amber-400 to-amber-300",
@@ -27,8 +29,8 @@ const Features = () => {
     },
     {
       icon: <Clock className="h-5 w-5 md:h-6 md:w-6" />,
-      title: ("Flexible Itineraries"),
-      description:
+      title: t?.feature_flexibleItineraries_title || "Flexible Itineraries",
+      description: t?.feature_flexibleItineraries_desc ||
         "Personalize your journey. Whether you want adventure, relaxation, or culture—we adapt to your rhythm.",
       color: "bg-sky-100 text-sky-700",
       gradient: "from-sky-600 via-sky-400 to-sky-300",
@@ -36,8 +38,8 @@ const Features = () => {
     },
     {
       icon: <Award className="h-5 w-5 md:h-6 md:w-6" />,
-      title: ("Premium Experience"),
-      description:
+      title: t?.feature_premiumExperience_title || "Premium Experience",
+      description: t?.feature_premiumExperience_desc ||
         "Experience first-class hospitality, handpicked destinations, and unforgettable moments tailored just for you.",
       color: "bg-purple-100 text-purple-700",
       gradient: "from-purple-600 via-purple-400 to-purple-300",
@@ -45,8 +47,8 @@ const Features = () => {
     },
     {
       icon: <Users className="h-5 w-5 md:h-6 md:w-6" />,
-      title: ("Small Groups"),
-      description:
+      title: t?.feature_smallGroups_title || "Small Groups",
+      description: t?.feature_smallGroups_desc ||
         "We keep our groups small to ensure deeper connections, better access, and personalized attention throughout your tour.",
       color: "bg-rose-100 text-rose-700",
       gradient: "from-rose-600 via-rose-400 to-rose-300",
@@ -54,8 +56,8 @@ const Features = () => {
     },
     {
       icon: <Heart className="h-5 w-5 md:h-6 md:w-6" />,
-      title: ("Authentic Connections"),
-      description:
+      title: t?.feature_authenticConnections_title || "Authentic Connections",
+      description: t?.feature_authenticConnections_desc ||
         "Go beyond sightseeing. Meet real locals, share meals, and connect with Sri Lanka’s warm spirit.",
       color: "bg-indigo-100 text-indigo-700",
       gradient: "from-indigo-600 via-indigo-400 to-indigo-300",
@@ -111,7 +113,7 @@ const Features = () => {
             viewport={{ once: true }}
             className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 fancy-heading-center"
           >
-            Why Choose <span className="text-gradient">Explorative Tours</span>
+            {t?.featuresTitle ? t.featuresTitle.replace("Explorative Tours", "") : "Why Choose "} <span className="text-gradient">{t?.brandName || "Explorative Tours"}</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -120,8 +122,7 @@ const Features = () => {
             viewport={{ once: true }}
             className="max-w-2xl mx-auto text-sm md:text-base text-gray-600"
           >
-            We're dedicated to providing exceptional travel experiences with safety, expertise, and authentic
-            connections to Sri Lankan culture and nature.
+            {t?.featuresSubtitle || "We're dedicated to providing exceptional travel experiences with safety, expertise, and authentic connections to Sri Lankan culture and nature."}
           </motion.p>
         </div>
 

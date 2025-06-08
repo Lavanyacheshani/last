@@ -72,7 +72,7 @@ export function BookingForm() {
     
     try {
       // Replace with your Google Apps Script web app URL
-      const response = await fetch("https://script.google.com/macros/s/AKfycbwUY6JZ4k1P37mcSEEGvLSmhCg9-dj07l4L3YCnHAOsOV61fx9HKzjKqq3-hm3FyR9YEA/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwUY6JZ4k1P37mcSEEGvLSmhCg9-dj07l4L3YCnHAOsOV61fx9HKzjKqq3-hm3FyR9YEA/exec?origin=https://last-five-alpha.vercel.app", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

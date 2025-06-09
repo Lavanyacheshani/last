@@ -57,54 +57,97 @@ export function CustomerFeedback() {
   }
 
   return (
-    <section className="py-8 md:py-16 bg-gradient-to-b from-maroon-50 to-maroon-100">
+    <section className="py-12 md:py-20 bg-gradient-to-b from-maroon-50 to-maroon-100">
       <div className="container mx-auto px-4">
-        <SectionHeading
-          title="What Our Customers Say"
-          subtitle="Read about the experiences of travelers who have explored Sri Lanka with us"
-        />
+        <div className="mb-12">
+          <SectionHeading
+            title="What Our Customers Say"
+            subtitle="Read about the experiences of travelers who have explored Sri Lanka with us"
+          />
+        </div>
 
-        <div className="relative max-w-4xl mx-auto">
-          <div className="overflow-hidden">
+        <div className="relative max-w-4xl mx-auto group">
+          {/* Navigation Arrows - Now with better positioning and hover effects */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-8 
+                     bg-white/90 backdrop-blur-sm text-maroon-700 p-2 md:p-3 rounded-full 
+                     shadow-lg hover:bg-maroon-50 transition-all duration-300 
+                     opacity-0 group-hover:opacity-100 z-20
+                     hover:scale-110 hover:shadow-xl"
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
+          </button>
+
+          <button
+            onClick={nextSlide}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-8 
+                     bg-white/90 backdrop-blur-sm text-maroon-700 p-2 md:p-3 rounded-full 
+                     shadow-lg hover:bg-maroon-50 transition-all duration-300 
+                     opacity-0 group-hover:opacity-100 z-20
+                     hover:scale-110 hover:shadow-xl"
+            aria-label="Next testimonial"
+          >
+            <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
+          </button>
+
+          {/* Testimonials Slider */}
+          <div className="overflow-hidden rounded-xl">
             <div
-              className="flex transition-transform duration-500 ease-in-out"
+              className="flex transition-transform duration-700 ease-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="w-full flex-shrink-0 px-4">
-                  <Card className="bg-white shadow-lg border-0 overflow-hidden">
-                    <CardContent className="p-4 md:p-6">
-                      <div className="flex flex-col md:flex-row items-center md:items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                        <div className="relative h-16 w-16 md:h-20 md:w-20 rounded-full overflow-hidden border-4 border-maroon-100 shadow-md">
+                  <Card className="bg-white shadow-xl border-0 overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <CardContent className="p-6 md:p-8">
+                      <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 mb-4 md:mb-6">
+                        {/* Profile Image */}
+                        <div className="relative h-20 w-20 md:h-24 md:w-24 rounded-full overflow-hidden 
+                                    border-4 border-maroon-100 shadow-md transform transition-transform 
+                                    duration-300 hover:scale-105">
                           <Image
-                            src={testimonial.image || "/placeholder.svg"}
+                            src={testimonial.image}
                             alt={testimonial.name}
                             fill
                             className="object-cover"
                           />
                         </div>
+
+                        {/* User Info */}
                         <div className="text-center md:text-left">
-                          <h3 className="font-bold text-base md:text-lg">{testimonial.name}</h3>
-                          <p className="text-gray-500 text-xs md:text-sm">{testimonial.country}</p>
-                          <div className="flex items-center justify-center md:justify-start mt-1">
+                          <h3 className="font-bold text-lg md:text-xl text-gray-900">
+                            {testimonial.name}
+                          </h3>
+                          <p className="text-gray-500 text-sm md:text-base">
+                            {testimonial.country}
+                          </p>
+                          <div className="flex items-center justify-center md:justify-start mt-2 gap-1">
                             {[...Array(5)].map((_, i) => (
                               <Star
                                 key={i}
-                                size={14}
-                                className={i < testimonial.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300"}
+                                size={16}
+                                className={`${
+                                  i < testimonial.rating 
+                                    ? "text-yellow-400 fill-yellow-400" 
+                                    : "text-gray-300"
+                                } transition-colors duration-300`}
                               />
                             ))}
                           </div>
                         </div>
                       </div>
+
+                      {/* Testimonial Text */}
                       <div className="relative">
-                        <p className="text-xs md:text-sm text-gray-700 italic relative z-10">{testimonial.text}</p>
-                        <div className="absolute top-0 left-0 text-4xl md:text-6xl text-maroon-100 opacity-50 -z-0 leading-none">
-                          "
-                        </div>
-                        <div className="absolute bottom-0 right-0 text-4xl md:text-6xl text-maroon-100 opacity-50 -z-0 leading-none transform translate-y-4">
-                          "
-                        </div>
+                        <p className="text-sm md:text-base text-gray-700 italic leading-relaxed">
+                          {testimonial.text}
+                        </p>
+                        <span className="absolute top-0 left-0 text-6xl md:text-7xl text-maroon-100/30 -z-10 
+                                     leading-none font-serif">"</span>
+                        <span className="absolute bottom-0 right-0 text-6xl md:text-7xl text-maroon-100/30 -z-10 
+                                     leading-none font-serif transform translate-y-4">"</span>
                       </div>
                     </CardContent>
                   </Card>
@@ -113,29 +156,17 @@ export function CustomerFeedback() {
             </div>
           </div>
 
-          <button
-            onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-4 bg-white text-maroon-700 p-1.5 md:p-2 rounded-full shadow-md hover:bg-maroon-50 transition-colors modern-button"
-            aria-label="Previous testimonial"
-          >
-            <ChevronLeft size={20} />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-4 bg-white text-maroon-700 p-1.5 md:p-2 rounded-full shadow-md hover:bg-maroon-50 transition-colors modern-button"
-            aria-label="Next testimonial"
-          >
-            <ChevronRight size={20} />
-          </button>
-
-          <div className="flex justify-center mt-4 md:mt-6 space-x-1.5 md:space-x-2">
+          {/* Pagination Dots */}
+          <div className="flex justify-center mt-6 md:mt-8 space-x-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`h-1.5 md:h-2 rounded-full transition-all duration-300 ${
-                  index === currentSlide ? "w-6 md:w-8 bg-maroon-700" : "w-1.5 md:w-2 bg-gray-300 hover:bg-maroon-300"
-                }`}
+                className={`transition-all duration-300 rounded-full
+                  ${index === currentSlide 
+                    ? "w-8 h-2 bg-maroon-700" 
+                    : "w-2 h-2 bg-gray-300 hover:bg-maroon-300"
+                  }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}

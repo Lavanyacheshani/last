@@ -71,68 +71,59 @@ export function BookingForm() {
     setSubmitError("")
     
     try {
-      // Replace with your Google Apps Script web app URL
-      const response = await fetch("https://script.google.com/macros/s/AKfycbwUY6JZ4k1P37mcSEEGvLSmhCg9-dj07l4L3YCnHAOsOV61fx9HKzjKqq3-hm3FyR9YEA/exec?origin=https://last-five-alpha.vercel.app", {
+      // Replace with your deployed Google Apps Script URL
+      const url = "https://script.google.com/macros/s/AKfycbz_SsMGLwLaj2zsvtruitK4S1f8KQE3uvl8ujXHTxfefLgA32_gGaYuWvmPi7b8hEaq9A/exec"
+      
+      const formDataForSheet = new URLSearchParams({
+        name: formData.name,
+        email: formData.email,
+        nationality: formData.nationality,
+        phone: formData.phone,
+        arrivalDate: formData.arrivalDate,
+        duration: formData.duration,
+        adults: formData.adults,
+        children: formData.children,
+        packageType: formData.packageType,
+        destinations: formData.destinations.join(", "),
+        comments: formData.comments
+      }).toString()
+
+      const response = await fetch(url, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: JSON.stringify(formData),
+        body: formDataForSheet
       })
 
       if (!response.ok) {
-        throw new Error("Failed to submit form")
+        throw new Error('Failed to submit booking')
       }
 
-      const result = await response.json()
-      if (result.result === "success") {
-        setSubmitSuccess(true)
-        // Reset form
-        setFormData({
-          name: "",
-          email: "",
-          nationality: "",
-          phone: "",
-          arrivalDate: "",
-          duration: "",
-          adults: "",
-          children: "",
-          comments: "",
-          packageType: "",
-          destinations: [],
-        })
-      }
+      const result = await response.text()
+      
+      // Show success message
+      setSubmitSuccess(true)
+      setFormData({
+        name: "",
+        email: "",
+        nationality: "",
+        phone: "",
+        arrivalDate: "",
+        duration: "",
+        adults: "",
+        children: "",
+        comments: "",
+        packageType: "",
+        destinations: [],
+      })
+
     } catch (error) {
-      console.error("Error submitting form:", error)
-      setSubmitError("There was an error submitting your form. Please try again.")
+      console.error('Submission error:', error)
+      setSubmitError("Failed to submit booking. Please try again.")
     } finally {
       setIsSubmitting(false)
     }
-  }
-
-  if (submitSuccess) {
-    return (
-      <section className="py-16 bg-white" id="booking">
-        <div className="container mx-auto px-4">
-          <Card className="max-w-4xl mx-auto">
-            <CardHeader>
-              <CardTitle>Thank You!</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-lg mb-4">
-                Thank you for your booking request! We will contact you shortly to discuss your Sri Lankan adventure.
-              </p>
-              <Button 
-                onClick={() => setSubmitSuccess(false)}
-                className="bg-emerald-600 hover:bg-emerald-700"
-              >
-                Submit Another Request
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-    )
   }
 
   return (

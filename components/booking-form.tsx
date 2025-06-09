@@ -22,6 +22,7 @@ export function BookingForm() {
     comments: "",
     packageType: "",
     destinations: [] as string[],
+    customDestination: "", // Add this line
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
@@ -116,6 +117,7 @@ export function BookingForm() {
         comments: "",
         packageType: "",
         destinations: [],
+        customDestination: "", // Add this line
       })
 
     } catch (error) {
@@ -269,6 +271,49 @@ export function BookingForm() {
                       <Label htmlFor={`destination-${destination}`} className="text-sm font-normal">
                         {destination}
                       </Label>
+                    </div>
+                  ))}
+                </div>
+                
+                {/* Add this new section for custom destination */}
+                <div className="mt-4 flex gap-2">
+                  <Input
+                    placeholder="Add other destination"
+                    value={formData.customDestination}
+                    onChange={(e) => setFormData({ ...formData, customDestination: e.target.value })}
+                  />
+                  <Button 
+                    type="button"
+                    variant="outline"
+                    onClick={() => {
+                      if (formData.customDestination.trim()) {
+                        setFormData(prev => ({
+                          ...prev,
+                          destinations: [...prev.destinations, prev.customDestination.trim()],
+                          customDestination: ""
+                        }))
+                      }
+                    }}
+                  >
+                    Add
+                  </Button>
+                </div>
+                
+                {/* Show custom destinations */}
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {formData.destinations.filter(d => !destinations.includes(d)).map(customDest => (
+                    <div key={customDest} className="flex items-center gap-1 bg-gray-100 px-2 py-1 rounded-md">
+                      <span className="text-sm">{customDest}</span>
+                      <button
+                        type="button"
+                        className="text-gray-500 hover:text-red-500"
+                        onClick={() => setFormData(prev => ({
+                          ...prev,
+                          destinations: prev.destinations.filter(d => d !== customDest)
+                        }))}
+                      >
+                        ×
+                      </button>
                     </div>
                   ))}
                 </div>

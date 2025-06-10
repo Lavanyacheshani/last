@@ -27,7 +27,7 @@ export const translations = {
     feature_premiumExperience_title: "Premium Experience",
     feature_premiumExperience_desc: "Experience first-class hospitality, handpicked destinations, and unforgettable moments tailored just for you.",
     feature_smallGroups_title: "Small Groups",
-    feature_smallGroups_desc: "We keep our groups small to ensure deeper connections, better access, and personalized attention throughout your tour.",
+    feature_smallGroups_desc: "We are Sri Lanka’s only dedicated travel partner introducing exclusive travel packages for solo adventurers and couples.",
     feature_authenticConnections_title: "Authentic Connections",
     feature_authenticConnections_desc: "Go beyond sightseeing. Meet real locals, share meals, and connect with Sri Lanka’s warm spirit.",
     // Intro Section

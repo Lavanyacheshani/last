@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image" // Add this import
 import { Menu, X } from "lucide-react"
 import { LanguageSwitcher } from "./language-switcher"
 import { SriLankaTime } from "./sri-lanka-time"
@@ -15,17 +16,28 @@ export function Header() {
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
+          <div className="flex items-center space-x-3">
             <Link
               href="/"
-              className="text-2xl font-bold text-maroon-700"
+              className="flex items-center space-x-3"
               onClick={() => {
                 if (window.location.pathname === "/") {
                   window.scrollTo({ top: 0, behavior: "smooth" })
                 }
               }}
             >
-              {t?.brandName || "Explorative Tours"}
+              <div className="relative w-12 h-12">
+                <Image
+                  src="/logo.png" // Add your logo file to public folder
+                  alt="Explorative Tours Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <span className="text-2xl font-bold text-maroon-700">
+                {t?.brandName || "Explorative Tours"}
+              </span>
             </Link>
           </div>
 

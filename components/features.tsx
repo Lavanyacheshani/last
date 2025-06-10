@@ -49,7 +49,7 @@ const Features = () => {
       icon: <Users className="h-5 w-5 md:h-6 md:w-6" />,
       title: t?.feature_smallGroups_title || "Small Groups",
       description: t?.feature_smallGroups_desc ||
-        "We keep our groups small to ensure deeper connections, better access, and personalized attention throughout your tour.",
+        "We are Sri Lanka’s only dedicated travel partner introducing exclusive travel packages for solo adventurers and couples.",
       color: "bg-rose-100 text-rose-700",
       gradient: "from-rose-600 via-rose-400 to-rose-300",
       delay: 0.4,

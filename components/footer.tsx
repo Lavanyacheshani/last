@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Explorative Tours</h3>
+            <h3 className="text-xl font-bold mb-4">Explorative Tours(Pvt) LTD Sri Lanka</h3>
             <p className="text-gray-300 mb-4">
               Your premier travel partner in Sri Lanka, offering unforgettable experiences with safety and comfort.
             </p>
@@ -76,7 +76,17 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 text-emerald-400 flex-shrink-0" />
-                <span className="text-gray-300">info@explorativetours.com</span>
+                <span className="text-gray-300">explorativetourssrilanka@gmail.com</span>
+              </li>
+              <li className="flex items-center">
+              <span className="text-gray-300">
+              <strong>Opening hours:</strong> 24 hours
+              </span>
+              </li>
+              <li className="flex items-center">
+              <span className="text-gray-300">
+              <strong>Founder & CEO:</strong> M.C.L. Gunawardhana
+              </span>
               </li>
             </ul>
           </div>

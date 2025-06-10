@@ -914,6 +914,11 @@ const destinationsData = {
         icon: Building,
       },
       {
+        title: "Hummanaya",
+        description: "Blowhole that shoots seawater high into the air",
+        icon: Waves,
+      },
+      {
         title: "Polhena Beach",
         description: "Protected beach with calm waters and coral reef",
         icon: Palmtree,

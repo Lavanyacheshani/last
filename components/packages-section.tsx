@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -7,13 +8,31 @@ import { Check, User, Users, UsersRound } from "lucide-react"
 import { SectionHeading } from "@/components/section-heading"
 import { motion } from "framer-motion"
 
+const useImageRotation = (images: string[]) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(timer);
+  }, [images.length]);
+
+  return currentImageIndex;
+};
+
 export function PackagesSection() {
   const packages = [
     {
       id: "solo",
       title: "Solo Traveller Package",
       price: "$125/day",
-      image: "/packages/solo-traveler.jpg",
+      images: [
+        "/packages/solo-1.jpg",
+        "/packages/solo-2.jpg",
+        "/packages/solo-3.jpg"
+      ],
       icon: <User className="h-6 w-6 md:h-8 md:w-8" />,
       features: [
         "Airport pickup & drop-off service",
@@ -42,7 +61,11 @@ export function PackagesSection() {
       id: "couple",
       title: "Couple Traveller Package",
       price: "$190/day",
-      image: "/packages/couple.jpg",
+      images: [
+        "/packages/couple-1.jpg",
+        "/packages/couple-2.jpg",
+        "/packages/couple-3.jpg"
+      ],
       icon: <Users className="h-6 w-6 md:h-8 md:w-8" />,
       features: [
         "Airport pickup & drop-off service",
@@ -70,7 +93,11 @@ export function PackagesSection() {
       id: "group",
       title: "Group/Family Traveller Package",
       price: "$60/person/day (min. 3 people)",
-      image: "/packages/11.jpg",
+      images: [
+        "/packages/group-1.jpg",
+        "/packages/group-2.jpg",
+        "/packages/group-3.jpg"
+      ],
       icon: <UsersRound className="h-6 w-6 md:h-8 md:w-8" />,
       features: [
         "Airport pickup & drop-off service",
@@ -114,14 +141,43 @@ export function PackagesSection() {
             >
               <Card className="group relative flex flex-col h-full overflow-hidden border-0 rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
                 {/* Package Image */}
+                {/* Package Images Carousel */}
                 <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={pkg.image ?? "/fallback-image.jpg"}
-                    alt={pkg.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
+                  {pkg.images.map((image, imageIndex) => (
+                    <motion.div
+                      key={image}
+                      initial={{ opacity: 0 }}
+                      animate={{ 
+                        opacity: imageIndex === useImageRotation(pkg.images) ? 1 : 0,
+                        transition: { duration: 0.5 }
+                      }}
+                      className="absolute inset-0"
+                    >
+                      <Image
+                        src={image}
+                        alt={`${pkg.title} - View ${imageIndex + 1}`}
+                        fill
+                        className="object-cover"
+                        priority={imageIndex === 0}
+                      />
+                    </motion.div>
+                  ))}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  
+                  {/* Image Navigation Dots */}
+                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                    {pkg.images.map((_, imageIndex) => (
+                      <div
+                        key={imageIndex}
+                        className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                          imageIndex === useImageRotation(pkg.images)
+                            ? "bg-white w-4"
+                            : "bg-white/50"
+                        }`}
+                      />
+                    ))}
+                  </div>
+
                   <div className="absolute bottom-4 left-4 right-4 text-white">
                     <h3 className="text-xl md:text-2xl font-bold">{pkg.title}</h3>
                     <p className="text-lg md:text-xl font-semibold mt-1">{pkg.price}</p>

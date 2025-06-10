@@ -123,8 +123,19 @@ export function ToursSection() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50" id="tours">
-      <div className="container mx-auto px-4">
+    <section className="relative py-20" id="tours">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/tours-bg.jpg" // Add your background image to public folder
+          alt="Tours background"
+          fill
+          className="object-cover opacity-10"
+          priority
+        />
+      </div>
+
+      <div className="container relative z-10 mx-auto px-4">
         {/* Modern Header Section */}
         <div className="text-center mb-16">
           <span className="text-maroon-600 font-medium tracking-wider uppercase text-sm">
@@ -137,10 +148,6 @@ export function ToursSection() {
             <div className="h-1 w-12 bg-maroon-600 rounded-full"></div>
             <div className="h-1 w-4 bg-maroon-400 rounded-full"></div>
           </div>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-            Discover the diverse range of experiences Sri Lanka has to offer, from ancient cultural sites
-            to thrilling adventures and serene natural escapes.
-          </p>
         </div>
 
         {/* Modern Tabs Navigation */}

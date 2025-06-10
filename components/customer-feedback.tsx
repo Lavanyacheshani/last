@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star, ChevronLeft, ChevronRight } from "lucide-react"
 import { SectionHeading } from "@/components/section-heading"
+import { FeedbackButton } from "@/components/feedback-button"
 
 export function CustomerFeedback() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -171,6 +172,11 @@ export function CustomerFeedback() {
               />
             ))}
           </div>
+        </div>
+
+        {/* Add feedback button at the bottom */}
+        <div className="flex justify-center mt-12">
+          <FeedbackButton />
         </div>
       </div>
     </section>

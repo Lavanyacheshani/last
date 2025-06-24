@@ -149,10 +149,10 @@ const destinationsData = {
       },
     ],
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/des/eg1.jpg",
+      "/des/eg2.png",
+      "/des/eg3.jpg",
+      "/des/eg4.jpg",
     ],
     thingsToDo: [
       {
@@ -202,7 +202,7 @@ const destinationsData = {
   },
   kandy: {
     name: "Kandy",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/des/kb.jpg",
     themeBg: "cultural",
     description: "Cultural capital of Sri Lanka, home to the Temple of the Tooth and scenic lake views.",
     fullDescription: `Kandy, the cultural capital of Sri Lanka, is a picturesque city nestled among the hills of the central province. As the last capital of the ancient kings' era, Kandy holds a significant place in Sri Lankan history and culture. The city is built around a peaceful lake and surrounded by hills, creating a scenic urban landscape.
@@ -236,48 +236,38 @@ const destinationsData = {
       },
     ],
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/des/k11.jpg",
+      "/des/k12.jpg",
+      "/des/k13.jpg",
+      "/des/k14.jpg",
     ],
     thingsToDo: [
       {
         title: "Visit the Temple of the Sacred Tooth Relic",
         description:
           "Explore Sri Lanka's most important Buddhist shrine, housing a tooth relic of the Buddha. Witness the elaborate rituals performed three times daily and admire the temple's ornate architecture and detailed carvings.",
-        image: "/images/temple-tooth.png",
+        image: "/des/k1.jpg",
       },
       {
         title: "Stroll around Kandy Lake",
         description:
           "Take a leisurely walk around the artificial lake built in 1807 by the last Sinhalese king. Enjoy the peaceful atmosphere, watch water monitors and various bird species, and admire the central island that once served as the king's personal harem.",
-        image: "/images/kandy-lake.png",
+        image: "/des/k2.jpg",
       },
       {
         title: "Attend a traditional Kandyan dance performance",
         description:
           "Experience the vibrant cultural heritage of Sri Lanka through a traditional dance show featuring colorful costumes, acrobatic moves, and fire-walking.",
-        image: "/placeholder.svg?height=300&width=400&text=Kandyan+Dance",
+        image: "/des/k3.JPG",
       },
-      {
-        title: "Visit the Ceylon Tea Museum",
-        description:
-          "Learn about the history and production of Ceylon tea at this museum housed in a former tea factory, with panoramic views of the city from the top floor.",
-        image: "/placeholder.svg?height=300&width=400&text=Tea+Museum",
-      },
+      
       {
         title: "Explore the Royal Botanical Gardens",
         description:
           "Wander through one of Asia's most impressive botanical gardens in nearby Peradeniya, featuring over 4,000 plant species including a magnificent avenue of royal palms.",
-        image: "/placeholder.svg?height=300&width=400&text=Botanical+Gardens",
+        image: "/des/k4.jpg",
       },
-      {
-        title: "Shop for gems, crafts, and batik",
-        description:
-          "Browse the shops and markets of Kandy for precious gems, handcrafted souvenirs, and colorful batik textiles.",
-        image: "/placeholder.svg?height=300&width=400&text=Kandy+Shopping",
-      },
+      
     ],
     popularActivities: [
       "Temple Visits",
@@ -290,7 +280,7 @@ const destinationsData = {
   },
   "nuwara-eliya": {
     name: "Nuwara Eliya",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/des/ng.jpg",
     themeBg: "mountain",
     description: "Known as 'Little England', featuring tea plantations, cool climate, and beautiful gardens.",
     fullDescription: `Nuwara Eliya, often referred to as 'Little England', is a charming city nestled in the heart of Sri Lanka's hill country. Located at an elevation of 1,868 meters (6,128 feet) above sea level, it enjoys a cool, crisp climate that stands in stark contrast to the tropical warmth of the rest of the island.
@@ -324,53 +314,48 @@ const destinationsData = {
       },
     ],
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/des/n11.jpg",
+      "/des/n12.jpg",
+      "/des/n13.jpg",
+      "/des/n14.jpg",
     ],
     thingsToDo: [
       {
         title: "Visit a tea factory for production tour and tasting",
         description:
           "Learn about the process of making Ceylon tea from plucking to processing, and enjoy a tasting session of different varieties.",
-        image: "/placeholder.svg?height=300&width=400&text=Tea+Factory",
+        image: "/des/n1.jpg",
       },
       {
         title: "Play golf at the Nuwara Eliya Golf Club",
         description: "Enjoy a round of golf at one of Asia's oldest golf courses, established in 1889 by the British.",
-        image: "/placeholder.svg?height=300&width=400&text=Golf+Club",
+        image: "/des/n2.jpg",
       },
       {
         title: "Take a boat ride on Gregory Lake",
         description:
           "Rent a swan-shaped paddle boat or motorboat to explore this scenic lake created by Governor Sir William Gregory in 1873.",
-        image: "/placeholder.svg?height=300&width=400&text=Gregory+Lake",
+        image: "/des/n3.jpg",
       },
-      {
-        title: "Hike to World's End in Horton Plains",
-        description:
-          "Take an early morning trip to this stunning escarpment with a sheer drop of about 880 meters offering breathtaking views.",
-        image: "/placeholder.svg?height=300&width=400&text=Worlds+End",
-      },
+      
       {
         title: "Visit the Seetha Amman Temple",
         description:
           "Explore this colorful Hindu temple associated with the Ramayana legend, where Sita is believed to have been held captive.",
-        image: "/placeholder.svg?height=300&width=400&text=Seetha+Temple",
+        image: "/des/n4.jpg",
       },
       {
         title: "Enjoy strawberry picking at local farms",
         description:
           "Visit one of the strawberry farms where you can pick your own fresh strawberries and enjoy strawberry-based treats.",
-        image: "/placeholder.svg?height=300&width=400&text=Strawberry+Farm",
+        image: "/des/n5.jpg",
       },
     ],
     popularActivities: ["Tea Tours", "Golf", "Hiking", "Boating", "Garden Visits", "Bird Watching"],
   },
   colombo: {
     name: "Colombo",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/des/cg.webp",
     themeBg: "city",
     description: "Sri Lanka's vibrant capital with a mix of modern life, colonial buildings, and shopping.",
     fullDescription: `Colombo, the commercial capital and largest city of Sri Lanka, is a vibrant metropolis that blends colonial heritage with modern urban development. As a port city with a rich trading history, Colombo has been influenced by various cultures including Portuguese, Dutch, and British colonizers, as well as Indian, Arab, and Malay traders.
@@ -406,54 +391,42 @@ const destinationsData = {
       },
     ],
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/des/c11.jpg",
+      "/des/c12.webp",
+      "/des/c13.jpg",
+      "/des/c14.jpg",
     ],
     thingsToDo: [
       {
         title: "Stroll along Galle Face Green",
         description:
           "Enjoy the ocean breeze at this urban park stretching along the coastline. It's perfect for flying kites, sampling street food, or watching the sunset.",
-        image: "/placeholder.svg?height=300&width=400&text=Galle+Face+Green",
+        image: "/des/c1.jpg",
       },
       {
         title: "Visit Gangaramaya Temple",
         description:
           "Explore this eclectic Buddhist temple that combines Sri Lankan, Thai, Indian, and Chinese architecture. Don't miss the museum with its collection of artifacts.",
-        image: "/placeholder.svg?height=300&width=400&text=Gangaramaya+Temple",
+        image: "/des/c2.jpg",
       },
       {
         title: "Shop at Pettah Market",
         description:
           "Experience the sensory overload of Colombo's main market district. Each street specializes in different goods, from textiles and electronics to spices and jewelry.",
-        image: "/placeholder.svg?height=300&width=400&text=Pettah+Market",
+        image: "/des/c3.jpg",
       },
       {
         title: "Explore the National Museum",
         description:
           "Discover Sri Lanka's cultural and natural heritage at the country's largest museum, housed in a stunning colonial-era building.",
-        image: "/placeholder.svg?height=300&width=400&text=National+Museum",
-      },
-      {
-        title: "Visit the Dutch Hospital Shopping Precinct",
-        description:
-          "Enjoy shopping and dining in this beautifully restored colonial-era hospital building, now home to upscale shops and restaurants.",
-        image: "/placeholder.svg?height=300&width=400&text=Dutch+Hospital",
-      },
-      {
-        title: "Take a tuk-tuk city tour",
-        description:
-          "Experience Colombo like a local by taking a guided tuk-tuk tour through the city's diverse neighborhoods and hidden gems.",
-        image: "/placeholder.svg?height=300&width=400&text=Tuktuk+Tour",
+        image: "/des/c4.jpg",
       },
     ],
     popularActivities: ["City Tours", "Shopping", "Cultural Visits", "Food Experiences", "Museum Visits", "Nightlife"],
   },
   dambulla: {
     name: "Dambulla",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/des/dg.jpg",
     themeBg: "cultural",
     description: "Famous for its magnificent cave temple complex and golden Buddha statue.",
     fullDescription: `Dambulla is a historic town located in the Central Province of Sri Lanka, renowned for its well-preserved cave temple complex dating back to the 1st century BCE. The Dambulla Cave Temple, also known as the Golden Temple of Dambulla, is a UNESCO World Heritage Site and one of the most important Buddhist sites in Sri Lanka.
@@ -489,48 +462,38 @@ const destinationsData = {
       },
     ],
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/des/d11.jpeg",
+      "/des/d12.jpg",
+      "/des/d13.jpg",
+      "/des/d14.jpg",
     ],
     thingsToDo: [
       {
         title: "Explore the Cave Temples",
         description:
           "Visit the five caves containing 153 Buddha statues, 3 statues of Sri Lankan kings, and 4 statues of gods and goddesses. The cave walls and ceilings are covered with Buddhist murals.",
-        image: "/placeholder.svg?height=300&width=400&text=Cave+Temples",
+        image: "/des/d1.webp",
       },
       {
         title: "Visit Sigiriya Rock Fortress",
         description:
           "Take a day trip to the nearby ancient rock fortress of Sigiriya, with its frescoes, water gardens, and panoramic views from the top.",
-        image: "/placeholder.svg?height=300&width=400&text=Sigiriya",
+        image: "/des/d2.jpg",
       },
       {
         title: "Explore the Golden Temple",
         description:
           "Marvel at the massive golden Buddha statue and the modern temple complex at the base of the cave temple hill.",
-        image: "/placeholder.svg?height=300&width=400&text=Golden+Temple",
+        image: "/des/d3.jpg",
       },
-      {
-        title: "Visit the Wholesale Market",
-        description:
-          "Experience the hustle and bustle of Sri Lanka's largest wholesale fruit and vegetable market, where produce from all over the country is traded.",
-        image: "/placeholder.svg?height=300&width=400&text=Wholesale+Market",
-      },
+      
       {
         title: "Take a safari at Minneriya National Park",
         description:
           "Witness 'The Gathering' - one of Asia's greatest wildlife spectacles where hundreds of elephants congregate around the Minneriya reservoir.",
-        image: "/placeholder.svg?height=300&width=400&text=Minneriya+Safari",
+        image: "/des/d4.jpg",
       },
-      {
-        title: "Visit Namal Uyana",
-        description:
-          "Explore Asia's largest ironwood forest and the unique rose quartz mountain formation, a natural wonder with pink-hued rocks.",
-        image: "/placeholder.svg?height=300&width=400&text=Namal+Uyana",
-      },
+      
     ],
     popularActivities: [
       "Temple Visits",
@@ -543,7 +506,7 @@ const destinationsData = {
   },
   "arugam-bay": {
     name: "Arugam Bay",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/des/ag.jpg",
     themeBg: "beach",
     description: "World-renowned surfing destination with a laid-back atmosphere and beautiful beaches.",
     fullDescription: `Arugam Bay is a crescent-shaped beach and bay located on Sri Lanka's southeast coast, renowned as one of the best surfing spots in the world. This once-sleepy fishing village has transformed into a popular destination for surfers and travelers seeking a laid-back beach atmosphere.
@@ -577,53 +540,43 @@ const destinationsData = {
       },
     ],
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/des/a11.jpg",
+      "/des/a12.jpg",
+      "/des/a13.webp",
+      "/des/a14.jpg",
     ],
     thingsToDo: [
       {
         title: "Surf at one of the many point breaks",
         description:
           "Experience world-class surfing at various breaks suitable for all skill levels, from beginners to professionals.",
-        image: "/placeholder.svg?height=300&width=400&text=Arugam+Bay+Surfing",
+        image: "/des/a1.jpg",
       },
       {
         title: "Take a lagoon safari",
         description:
           "Explore the Pottuvil Lagoon by boat to spot crocodiles, birds, and occasionally elephants in their natural habitat.",
-        image: "/placeholder.svg?height=300&width=400&text=Lagoon+Safari",
+        image: "/des/a2.jpg",
       },
       {
         title: "Visit nearby Kumana National Park",
         description:
           "Take a safari to see leopards, elephants, crocodiles, and numerous bird species in this wildlife sanctuary.",
-        image: "/placeholder.svg?height=300&width=400&text=Kumana+Park",
+        image: "/des/a3.png",
       },
       {
         title: "Explore Panama Tank",
         description:
           "Visit this ancient reservoir with abundant birdlife and beautiful surroundings for photography and nature walks.",
-        image: "/placeholder.svg?height=300&width=400&text=Panama+Tank",
+        image: "/des/a4.jpg",
       },
-      {
-        title: "Take a cooking class",
-        description:
-          "Learn to prepare traditional Sri Lankan cuisine using fresh local ingredients and authentic techniques.",
-        image: "/placeholder.svg?height=300&width=400&text=Cooking+Class",
-      },
-      {
-        title: "Join a yoga class",
-        description: "Participate in beachside yoga sessions offered by many studios along the main strip.",
-        image: "/placeholder.svg?height=300&width=400&text=Beach+Yoga",
-      },
+     
     ],
     popularActivities: ["Surfing", "Wildlife Safaris", "Yoga", "Beach Activities", "Photography", "Lagoon Tours"],
   },
   anuradhapura: {
     name: "Anuradhapura",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/des/ang.jpg",
     themeBg: "cultural",
     description: "Ancient city with well-preserved ruins of an ancient Sinhalese civilization.",
     fullDescription: `Anuradhapura, one of the ancient capitals of Sri Lanka, is a sacred city that served as the center of Theravada Buddhism for centuries. Founded in the 5th century BCE, it flourished as the political and religious capital of the island for over 1,300 years before being abandoned after an invasion in 993 CE.
@@ -659,48 +612,37 @@ const destinationsData = {
       },
     ],
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/des/z1.jpg",
+      "/des/z2.webp",
+      "/des/z3.png",
+      "/des/z4.png",
     ],
     thingsToDo: [
       {
         title: "Visit the Sacred Bodhi Tree",
         description:
           "Pay respects at the Sri Maha Bodhi, the oldest documented tree in the world, grown from a cutting of the original tree under which Buddha attained enlightenment.",
-        image: "/placeholder.svg?height=300&width=400&text=Sacred+Bodhi+Tree",
+        image: "/des/an1.jpg",
       },
       {
         title: "Explore the ancient dagobas",
         description:
           "Marvel at massive brick stupas like Ruwanwelisaya, Jetavanaramaya, and Abhayagiri, which were among the largest structures in the ancient world.",
-        image: "/placeholder.svg?height=300&width=400&text=Ancient+Dagobas",
+        image: "/des/an2.jpg",
       },
       {
         title: "Discover the Twin Ponds (Kuttam Pokuna)",
         description:
           "Admire the sophisticated ancient hydraulic engineering of these symmetrical bathing tanks with their elaborate stone carvings.",
-        image: "/placeholder.svg?height=300&width=400&text=Twin+Ponds",
+        image: "/des/an3.jpeg",
       },
       {
         title: "Visit Isurumuniya Temple",
         description:
           "See the famous rock carvings including the 'Lovers' sculpture and the royal family, showcasing ancient Sinhalese stone art.",
-        image: "/placeholder.svg?height=300&width=400&text=Isurumuniya+Temple",
+        image: "/des/an4.jpg",
       },
-      {
-        title: "Explore Mihintale",
-        description:
-          "Visit the mountain peak where Buddhism was first introduced to Sri Lanka, featuring ancient stairs, stupas, and caves.",
-        image: "/placeholder.svg?height=300&width=400&text=Mihintale",
-      },
-      {
-        title: "Cycle through the ancient city",
-        description:
-          "Rent a bicycle to explore the vast archaeological site at your own pace, navigating between the scattered ruins and monuments.",
-        image: "/placeholder.svg?height=300&width=400&text=Cycling+Anuradhapura",
-      },
+      
     ],
     popularActivities: [
       "Historical Tours",
@@ -711,99 +653,10 @@ const destinationsData = {
       "Meditation",
     ],
   },
-  polonnaruwa: {
-    name: "Polonnaruwa",
-    image: "/placeholder.svg?height=800&width=1600",
-    themeBg: "cultural",
-    description: "Medieval capital with impressive stone temples, ancient structures, and the famous Gal Vihara.",
-    fullDescription: `Polonnaruwa served as Sri Lanka's second ancient capital from the 11th to 13th centuries CE, following the destruction of Anuradhapura. Under the reign of King Parakramabahu I (1153-1186 CE), the city reached its golden age, with the construction of magnificent buildings, sophisticated irrigation systems, and impressive stone sculptures.
-
-    Today, Polonnaruwa is a UNESCO World Heritage Site and one of the best-preserved ancient cities in Sri Lanka. The compact archaeological park contains a remarkable collection of monuments in a relatively small area, making it easier to explore than Anuradhapura. The ruins showcase a fascinating blend of Sinhalese and South Indian architectural styles.
-
-    The city is also known for its large artificial lake, Parakrama Samudra, built by King Parakramabahu, which still provides water for the surrounding rice fields and communities.`,
-    highlights: [
-      {
-        title: "Gal Vihara",
-        description: "Rock temple with magnificent Buddha statues",
-        icon: Landmark,
-      },
-      {
-        title: "Royal Palace",
-        description: "Impressive ruins of King Parakramabahu's residence",
-        icon: Building,
-      },
-      {
-        title: "Sacred Quadrangle",
-        description: "Compact group of fascinating ancient structures",
-        icon: Landmark,
-      },
-      {
-        title: "Parakrama Samudra",
-        description: "Ancient man-made reservoir still in use today",
-        icon: Waves,
-      },
-      {
-        title: "Rankoth Vehera",
-        description: "Largest stupa in Polonnaruwa, modeled after Anuradhapura stupas",
-        icon: Landmark,
-      },
-    ],
-    gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-    ],
-    thingsToDo: [
-      {
-        title: "Marvel at the Buddha statues of Gal Vihara",
-        description:
-          "Admire the four magnificent Buddha statues carved from a single granite rock, considered masterpieces of ancient Sri Lankan art.",
-        image: "/placeholder.svg?height=300&width=400&text=Gal+Vihara",
-      },
-      {
-        title: "Explore the Sacred Quadrangle",
-        description:
-          "Visit this compact area containing some of Polonnaruwa's most important and impressive monuments, including the Vatadage and Hatadage.",
-        image: "/placeholder.svg?height=300&width=400&text=Sacred+Quadrangle",
-      },
-      {
-        title: "Visit the Royal Palace ruins",
-        description:
-          "Imagine royal life in the massive seven-story palace of King Parakramabahu, with its impressive 3-meter thick walls.",
-        image: "/placeholder.svg?height=300&width=400&text=Royal+Palace",
-      },
-      {
-        title: "Cycle through the ancient city",
-        description:
-          "Rent a bicycle to explore the archaeological park, which is spread out enough to make cycling the perfect way to see the sites.",
-        image: "/placeholder.svg?height=300&width=400&text=Cycling+Polonnaruwa",
-      },
-      {
-        title: "Watch for wildlife around Parakrama Samudra",
-        description:
-          "Observe various bird species and possibly elephants around the shores of this ancient man-made lake, especially at dawn or dusk.",
-        image: "/placeholder.svg?height=300&width=400&text=Parakrama+Samudra",
-      },
-      {
-        title: "Visit the Archaeological Museum",
-        description:
-          "Learn about the history and significance of Polonnaruwa's monuments through artifacts and informative displays.",
-        image: "/placeholder.svg?height=300&width=400&text=Archaeological+Museum",
-      },
-    ],
-    popularActivities: [
-      "Historical Tours",
-      "Cycling",
-      "Photography",
-      "Bird Watching",
-      "Archaeological Exploration",
-      "Cultural Experiences",
-    ],
-  },
+  
   trincomalee: {
     name: "Trincomalee",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/des/tb.jpg",
     themeBg: "beach",
     description: "Port city with pristine beaches, natural harbors, and the sacred Koneswaram temple.",
     fullDescription: `Trincomalee (often called "Trinco") is a port city on the northeast coast of Sri Lanka, blessed with one of the world's finest natural harbors. With its strategic location, the harbor has been coveted by various colonial powers throughout history, including the Portuguese, Dutch, French, and British.
@@ -839,48 +692,37 @@ const destinationsData = {
       },
     ],
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/des/t11.jpg",
+      "/des/t12.webp",
+      "/des/t13.jpg",
+      "/des/t14.jpg",
     ],
     thingsToDo: [
       {
         title: "Snorkel or dive at Pigeon Island",
         description:
           "Explore the vibrant coral reefs and encounter diverse marine life including reef sharks, turtles, and hundreds of fish species.",
-        image: "/placeholder.svg?height=300&width=400&text=Pigeon+Island",
+        image: "/des/t1.jpg",
       },
       {
         title: "Visit Koneswaram Temple",
         description:
           "Explore this ancient Hindu temple perched on Swami Rock cliff, with its colorful statues and breathtaking views of the ocean.",
-        image: "/placeholder.svg?height=300&width=400&text=Koneswaram+Temple",
+        image: "/des/t2.jpg",
       },
       {
         title: "Go whale watching",
         description:
           "Take a boat tour to spot blue whales, sperm whales, and dolphins in the deep waters off Trincomalee (best from May to October).",
-        image: "/placeholder.svg?height=300&width=400&text=Whale+Watching",
+        image: "/des/t3.jpg",
       },
       {
         title: "Relax on Uppuveli or Nilaveli beaches",
         description:
           "Enjoy the pristine white sand beaches with their shallow, calm waters perfect for swimming and sunbathing.",
-        image: "/placeholder.svg?height=300&width=400&text=Nilaveli+Beach",
+        image: "/des/t4.jpg",
       },
-      {
-        title: "Explore Fort Frederick",
-        description:
-          "Walk through this historic fort built by the Portuguese and later occupied by the Dutch and British, now home to a military base and wild deer.",
-        image: "/placeholder.svg?height=300&width=400&text=Fort+Frederick",
-      },
-      {
-        title: "Visit the hot springs of Kanniya",
-        description:
-          "Experience the seven hot water wells of different temperatures, believed to have therapeutic properties.",
-        image: "/placeholder.svg?height=300&width=400&text=Kanniya+Hot+Springs",
-      },
+      
     ],
     popularActivities: [
       "Beach Activities",
@@ -893,7 +735,7 @@ const destinationsData = {
   },
   matara: {
     name: "Matara",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/des/mb.jpg",
     themeBg: "beach",
     description: "Southern coastal city with Dutch colonial heritage, beaches, and the famous Paravi Duwa temple.",
     fullDescription: `Matara is a bustling coastal city located at the southernmost tip of Sri Lanka, where the Nilwala River meets the Indian Ocean. With a history dating back to ancient times, the city flourished during the Dutch colonial period in the 17th and 18th centuries, leaving behind a rich architectural heritage.
@@ -934,47 +776,47 @@ const destinationsData = {
       },
     ],
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/des/m11.jpg",
+      "/des/m12.jpg",
+      "/des/m13.jpg",
+      "/des/m14.avif",
     ],
     thingsToDo: [
       {
         title: "Visit Paravi Duwa Temple",
         description:
           "Walk across the pedestrian bridge to this picturesque Buddhist temple built on a tiny island just offshore.",
-        image: "/placeholder.svg?height=300&width=400&text=Paravi+Duwa",
+        image: "/des/p1.webp",
       },
       {
         title: "Explore the Dutch Star Fort",
         description:
           "Discover this well-preserved star-shaped fort built in 1765, now housing a small museum and offering views of the city.",
-        image: "/placeholder.svg?height=300&width=400&text=Star+Fort",
+        image: "/des/m1.jpg",
       },
       {
         title: "Relax at Polhena Beach",
         description:
           "Enjoy swimming and snorkeling in the calm, shallow waters protected by an offshore reef, perfect for families.",
-        image: "/placeholder.svg?height=300&width=400&text=Polhena+Beach",
+        image: "/des/m2.jpg",
       },
       {
         title: "Visit Dondra Head Lighthouse",
         description:
           "Climb to the top of Sri Lanka's tallest lighthouse for panoramic views from the island's southernmost point.",
-        image: "/placeholder.svg?height=300&width=400&text=Dondra+Lighthouse",
+        image: "/des/m3.jpg",
       },
       {
         title: "Explore Matara Old Town",
         description:
           "Wander through the historic section of the city with its Dutch colonial buildings, old ramparts, and local markets.",
-        image: "/placeholder.svg?height=300&width=400&text=Matara+Old+Town",
+        image: "/des/m4.jpg",
       },
       {
         title: "Visit Weherahena Temple",
         description:
           "Explore this unique temple featuring a massive seated Buddha statue and colorful tunnel paintings depicting Buddhist stories.",
-        image: "/placeholder.svg?height=300&width=400&text=Weherahena+Temple",
+        image: "/des/m5.webp",
       },
     ],
     popularActivities: [

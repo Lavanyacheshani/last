@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { BackButton } from "@/components/back-button"
 import { notFound } from "next/navigation"
 import { useLanguage } from "@/components/language-context"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // This would typically come from a database or API
 // For now, we'll just include a few examples

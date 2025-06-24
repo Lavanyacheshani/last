@@ -10,6 +10,7 @@ import { IntroSection } from "@/components/intro-section"
 import { PackagesSection } from "@/components/packages-section"
 import { FeedbackButton } from "@/components/feedback-button"
 import Image from "next/image"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (

@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useLanguage } from "@/components/language-context"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 interface ActivityCardProps {
   activity: any

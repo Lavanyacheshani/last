@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { useLanguage } from "@/components/language-context"
 import { ActivityCard } from "@/components/tours/activity-card"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 interface CategorySectionProps {
   category: any

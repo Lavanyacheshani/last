@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
 import { useLanguage } from "@/components/language-context"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 interface ActivityModalProps {
   activity: any

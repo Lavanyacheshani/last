@@ -1,4 +1,5 @@
 import { Compass, Palmtree, Waves, Droplets, Tent, PartyPopper, MountainIcon } from "lucide-react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const tourCategories = [
   {

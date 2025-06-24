@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { LanguageProvider } from "@/components/language-context"
 import Script from "next/script"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -20,10 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Explorative Tours</title>
+      </head>
       <body className={inter.className}>
         <LanguageProvider>
           {children}
         </LanguageProvider>
+        <SpeedInsights />
         <Script id="scroll-reveal">
           {`
             function reveal() {

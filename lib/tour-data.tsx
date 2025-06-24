@@ -12,8 +12,8 @@ export const tourCategories = [
         description: "The ancient capital, home to sacred Bodhi Tree and massive stupas.",
         image: "/tour/1.jpg",
         images: [
-          "/tour/anu1.jpg",
-          "/tour/anu2.jpg",
+          "/des/z1.jpg",
+          "/des/z3.png",
         ],
         highlights: [
           "Sacred Bodhi Tree - Oldest historically authenticated tree in the world",
@@ -29,8 +29,8 @@ export const tourCategories = [
         description: "UNESCO site showcasing well-preserved ruins of medieval Sri Lanka.",
         image: "/tour/2.jpg",
         images: [
-          "/tour/pol1.jpg",
-          "/tour/pol2.jpg",
+          "/tour/p1.jpg",
+          "/tour/p2.jpg",
           
         ],
         highlights: [
@@ -47,8 +47,8 @@ export const tourCategories = [
         description: "A spiritual cave temple with Buddhist murals and statues.",
         image: "/tour/3.jpg",
         images: [
-          "/tour/dam1.jpg",
-          "/tour/dam2.jpg",
+          "/tour/d1.jpg",
+          "/tour/d2.jpg",
         ],
         highlights: [
           "Five caves containing 153 Buddha statues and hundreds of paintings",
@@ -64,8 +64,8 @@ export const tourCategories = [
         description: "Iconic Lion Rock fortress with frescoes and royal gardens.",
         image: "/tour/4.jpg",
         images: [
-          "/tour/sig1.jpg",
-          "/tour/sig2.jpg",
+          "/tour/s1.webp",
+          "/tour/s2.jpg",
         ],
         highlights: [
           "Lion's Paw Entrance - Massive stone lion paws guarding the final ascent",
@@ -81,8 +81,8 @@ export const tourCategories = [
         description: "Sacred city with the Temple of the Tooth and vibrant cultural shows.",
         image: "/tour/5.PNG",
         images: [
-          "/tour/kan1.jpg",
-          "/tour/kan2.jpg",
+          "/des/k1.jpg",
+          "/des/k3.jpg",
         ],
         highlights: [
           "Temple of the Sacred Tooth Relic - Most revered Buddhist site in Sri Lanka",
@@ -98,7 +98,7 @@ export const tourCategories = [
       description: "Unique spiral tower offering panoramic views and biodiversity.",
       image: "/tour/6.PNG",
       images: [
-          "/tour/amb1.jpg",
+          "/tour/amb1.webp",
           "/tour/amb2.jpg",
         ],
       highlights: [
@@ -114,10 +114,9 @@ export const tourCategories = [
       description: "Bustling capital blending colonial charm and modern vibes.",
       image: "/tour/7.jpg",
       images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
+          "/des/c1.jpg",
+          "/des/c13.jpg",
+          
         ],      
         highlights: [
         "Galle Face Green promenade",
@@ -132,10 +131,9 @@ export const tourCategories = [
       description: "17th-century Dutch fortress with coastal charm and cobbled streets.",
       image: "/tour/8.jpg",
       images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
+          "/tour/g1.jpg",
+          "/tour/g2.webp",
+          
         ],      
         highlights: [
         "UNESCO World Heritage Site",
@@ -150,10 +148,9 @@ export const tourCategories = [
       description: "Discover Sri Lanka’s Veddah community and traditions.",
       image: "/tour/9.PNG",
       images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
+          "/tour/damm.jpg",
+          "/tour/dam2.jpg",
+          
         ],      
         highlights: [
         "Traditional hunting and cultural practices",
@@ -168,10 +165,9 @@ export const tourCategories = [
       description: "Sanctuary for rescued elephants, ideal for close encounters.",
       image: "/tour/10.jpg",
       images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
+          "/tour/pi.avif",
+          "/tour/pii.webp",
+          
         ],      
         highlights: [
         "Elephant bathing in the river",
@@ -180,52 +176,16 @@ export const tourCategories = [
       ],
       bestTime: "Morning sessions for feeding and bathing."
     },
-    {
-      id: "madu-ganga",
-      name: "Madu Ganga River Safari",
-      description: "Mangrove ecosystem boat ride through serene waterways.",
-      image: "/placeholder.svg?height=400&width=600&text=Madu+Ganga",
-      images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
-        ],      
-        highlights: [
-        "Mangrove forests and islands",
-        "Fish spa experience",
-        "Bird and monkey sightings"
-      ],
-      bestTime: "Dry season, November to April."
-    },
-    {
-      id: "tea-estates",
-      name: "Upcountry Tea Estates",
-      description: "Walk through lush tea plantations and experience tea making.",
-      image: "/placeholder.svg?height=400&width=600&text=Tea+Estates",
-      images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
-        ],      
-        highlights: [
-        "Tea plucking experiences",
-        "Visit working tea factories",
-        "Scenic train rides and panoramic views"
-      ],
-      bestTime: "February to May or August to October."
-    },
+    
     {
       id: "ritigala",
       name: "Ritigala Monastery Ruins",
       description: "Mystical jungle ruins of an ancient Buddhist monastery.",
-      image: "/placeholder.svg?height=400&width=600&text=Ritigala",
+      image: "/tour/r.jpg",
       images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
+          "/tour/r1.webp",
+          "/tour/r2.jpg",
+          
         ],      
         highlights: [
         "Less crowded historical site",
@@ -234,34 +194,16 @@ export const tourCategories = [
       ],
       bestTime: "June to September."
     },
-    {
-      id: "aluvihara",
-      name: "Aluvihara Rock Temple",
-      description: "Historic temple where Buddhist scriptures were first written.",
-      image: "/placeholder.svg?height=400&width=600&text=Aluvihara",
-      images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
-        ],      
-        highlights: [
-        "Historic cave temple",
-        "Pali Canon transcription site",
-        "Ancient wall art and artifacts"
-      ],
-      bestTime: "December to April."
-    },
+    
     {
       id: "jaffna",
       name: "Jaffna",
       description: "Cultural hub of Tamil heritage with historic temples, libraries, and forts.",
-      image: "/placeholder.svg?height=400&width=600&text=Jaffna",
+      image: "/tour/j.jpg",
       images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
+          "/tour/j1.jpeg",
+          "/tour/j2.jpg",
+          
         ],      
         highlights: [
         "Nallur Kovil and Jaffna Fort",
@@ -269,59 +211,8 @@ export const tourCategories = [
         "Islands like Delft and Kayts"
       ],
       bestTime: "May to September."
-    },
-    {
-      id: "tissamaharama",
-      name: "Tissamaharama",
-      description: "Ancient capital of Ruhuna Kingdom with Buddhist dagobas.",
-      image: "/placeholder.svg?height=400&width=600&text=Tissamaharama",
-      images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
-        ],      
-        highlights: [
-        "Tissa Wewa and stupa ruins",
-        "Gateway to Yala safaris",
-        "Historical significance and spiritual ambiance"
-      ],
-      bestTime: "November to April."
-    },
-    {
-      id: "kelaniya",
-      name: "Kelaniya Raja Maha Vihara",
-      description: "Sacred Buddhist temple visited by Lord Buddha.",
-      image: "/placeholder.svg?height=400&width=600&text=Kelaniya",
-      images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
-        ],      highlights: [
-        "Vibrant murals depicting Buddha's life",
-        "Pilgrimage site near Colombo",
-        "Historical temple with annual Perahera"
-      ],
-      bestTime: "Full moon days or December to March."
-    },
-    {
-      id: "seethawaka",
-      name: "Seethawaka Wet Zone Botanic Gardens",
-      description: "Historical site linked to the Seetha myth and early kingdoms.",
-      image: "/placeholder.svg?height=400&width=600&text=Seethawaka",
-      images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
-        ],      highlights: [
-        "Rare tropical plants and streams",
-        "Links to Ramayana mythology",
-        "Peaceful nature walks"
-      ],
-      bestTime: "December to March."
     }
+    
   ]
 },
   {
@@ -333,12 +224,11 @@ export const tourCategories = [
         id: "yala",
         name: "Yala National Park",
         description: "Renowned for leopard sightings and diverse wildlife.",
-        image: "/placeholder.svg?height=400&width=600&text=Yala",
+        image: "/tour/y.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Yala+1",
-          "/placeholder.svg?height=600&width=800&text=Yala+2",
-          "/placeholder.svg?height=600&width=800&text=Yala+3",
-          "/placeholder.svg?height=600&width=800&text=Yala+4",
+          "/tour/y1.jpg",
+          "/tour/y2.jpg",
+          
         ],
         highlights: [
           "Leopard spotting - Highest density of leopards in the world",
@@ -352,12 +242,11 @@ export const tourCategories = [
         id: "kaudulla",
         name: "Kaudulla National Park",
         description: "Famous for elephant herds and scenic landscapes.",
-        image: "/placeholder.svg?height=400&width=600&text=Kaudulla",
+        image: "/tour/k.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Kaudulla+1",
-          "/placeholder.svg?height=600&width=800&text=Kaudulla+2",
-          "/placeholder.svg?height=600&width=800&text=Kaudulla+3",
-          "/placeholder.svg?height=600&width=800&text=Kaudulla+4",
+          "/tour/k1.jpg",
+          "/tour/k2.jpg",
+          
         ],
         highlights: [
           "Elephant herds - Up to 200 elephants gather around the reservoir",
@@ -372,12 +261,11 @@ export const tourCategories = [
         id: "wilpattu",
         name: "Wilpattu National Park",
         description: "Largest national park with natural lakes and untouched forest.",
-        image: "/placeholder.svg?height=400&width=600&text=Wilpattu",
+        image: "/tour/v.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Wilpattu+1",
-          "/placeholder.svg?height=600&width=800&text=Wilpattu+2",
-          "/placeholder.svg?height=600&width=800&text=Wilpattu+3",
-          "/placeholder.svg?height=600&width=800&text=Wilpattu+4",
+          "/tour/v1.avif",
+          "/tour/v2.jpg",
+        
         ],
         highlights: [
           "Natural lakes (Villus) - Unique feature of this national park",
@@ -391,12 +279,11 @@ export const tourCategories = [
         id: "minneriya",
         name: "Minneriya National Park",
         description: "Home to 'The Gathering' – world's largest elephant meeting.",
-        image: "/placeholder.svg?height=400&width=600&text=Minneriya",
+        image: "/tour/mi.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Minneriya+1",
-          "/placeholder.svg?height=600&width=800&text=Minneriya+2",
-          "/placeholder.svg?height=600&width=800&text=Minneriya+3",
-          "/placeholder.svg?height=600&width=800&text=Minneriya+4",
+          "/tour/mi1.jpg",
+          "/tour/mi2.jpg",
+          
         ],
         highlights: [
           "The Gathering - Up to 300 elephants congregate around the reservoir",
@@ -410,12 +297,11 @@ export const tourCategories = [
         id: "sinharaja",
         name: "Sinharaja Rainforest",
         description: "UNESCO biosphere with endemic flora and fauna.",
-        image: "/placeholder.svg?height=400&width=600&text=Sinharaja",
+        image: "/tour/si.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Sinharaja+1",
-          "/placeholder.svg?height=600&width=800&text=Sinharaja+2",
-          "/placeholder.svg?height=600&width=800&text=Sinharaja+3",
-          "/placeholder.svg?height=600&width=800&text=Sinharaja+4",
+          "/tour/sii.jpg",
+          "/tour/siii.jpg",
+          
         ],
         highlights: [
           "Biodiversity Hotspot - Over 60% of the trees are endemic to Sri Lanka",
@@ -436,12 +322,11 @@ export const tourCategories = [
         id: "hikkaduwa",
         name: "Hikkaduwa",
         description: "Famous for coral reefs and vibrant nightlife.",
-        image: "/placeholder.svg?height=400&width=600&text=Hikkaduwa",
+        image: "/tour/h.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Hikkaduwa+1",
-          "/placeholder.svg?height=600&width=800&text=Hikkaduwa+2",
-          "/placeholder.svg?height=600&width=800&text=Hikkaduwa+3",
-          "/placeholder.svg?height=600&width=800&text=Hikkaduwa+4",
+          "/tour/h1.jpg",
+          "/tour/h2.jpg",
+          
         ],
         highlights: [
           "Coral Sanctuary - Snorkel among colorful fish and sea turtles",
@@ -455,12 +340,11 @@ export const tourCategories = [
         id: "arugambay",
         name: "Arugam Bay",
         description: "Surfer's paradise with beach vibes and scenic views.",
-        image: "/placeholder.svg?height=400&width=600&text=Arugam+Bay",
+        image: "/des/a12.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Arugam+Bay+1",
-          "/placeholder.svg?height=600&width=800&text=Arugam+Bay+2",
-          "/placeholder.svg?height=600&width=800&text=Arugam+Bay+3",
-          "/placeholder.svg?height=600&width=800&text=Arugam+Bay+4",
+          "/des/a14.jpg",
+          "/des/a13.webp",
+          
         ],
         highlights: [
           "World-class surfing with multiple point breaks",
@@ -474,12 +358,11 @@ export const tourCategories = [
         id: "mirissa",
         name: "Mirissa",
         description: "Whale watching, beach parties, and scenic palm hill.",
-        image: "/placeholder.svg?height=400&width=600&text=Mirissa",
+        image: "/tour/z.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Mirissa+1",
-          "/placeholder.svg?height=600&width=800&text=Mirissa+2",
-          "/placeholder.svg?height=600&width=800&text=Mirissa+3",
-          "/placeholder.svg?height=600&width=800&text=Mirissa+4",
+          "/tour/z1.jpg",
+          "/tour/z2.jpg",
+          
         ],
         highlights: [
           "Whale watching - Blue whales and sperm whales",
@@ -493,12 +376,11 @@ export const tourCategories = [
         id: "unawatuna",
         name: "Unawatuna",
         description: "Beautiful beach with a relaxed vibe and water sports.",
-        image: "/placeholder.svg?height=400&width=600&text=Unawatuna",
+        image: "/tour/u.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Unawatuna+1",
-          "/placeholder.svg?height=600&width=800&text=Unawatuna+2",
-          "/placeholder.svg?height=600&width=800&text=Unawatuna+3",
-          "/placeholder.svg?height=600&width=800&text=Unawatuna+4",
+          "/tour/u1.jpg",
+          "/tour/u2.webp",
+          
         ],
         highlights: [
           "Snorkeling and diving at nearby coral reefs",
@@ -512,12 +394,11 @@ export const tourCategories = [
         id: "kalpitiya",
         name: "Kalpitiya",
         description: "Kite surfing hotspot with pristine beaches and lagoons.",
-        image: "/placeholder.svg?height=400&width=600&text=Kalpitiya",
+        image: "/tour/ka.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Kalpitiya+1",
-          "/placeholder.svg?height=600&width=800&text=Kalpitiya+2",
-          "/placeholder.svg?height=600&width=800&text=Kalpitiya+3",
-          "/placeholder.svg?height=600&width=800&text=Kalpitiya+4",
+          "/tour/kaa.jpg",
+          "/tour/kaaa.jpg",
+          
         ],
         highlights: [
           "Kite surfing - Ideal conditions for both beginners and experts",
@@ -531,12 +412,11 @@ export const tourCategories = [
         id: "trincomalee",
         name: "Trincomalee",
         description: "Historical port city with beautiful beaches and whale watching.",
-        image: "/placeholder.svg?height=400&width=600&text=Trincomalee",
+        image: "/des/t1.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Trincomalee+1",
-          "/placeholder.svg?height=600&width=800&text=Trincomalee+2",
-          "/placeholder.svg?height=600&width=800&text=Trincomalee+3",
-          "/placeholder.svg?height=600&width=800&text=Trincomalee+4",
+          "/des/t2.jpg",
+          "/des/t3.jpg",
+          
         ],
         highlights: [
           "Nilaveli Beach – White sands and crystal-clear waters, perfect for relaxation",
@@ -555,12 +435,11 @@ export const tourCategories = [
         id: "bentota",
         name: "Bentota",
         description: "Luxury beach resort town with water sports and relaxation.",
-        image: "/placeholder.svg?height=400&width=600&text=Bentota",
+        image: "/tour/b.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Bentota+1",
-          "/placeholder.svg?height=600&width=800&text=Bentota+2",
-          "/placeholder.svg?height=600&width=800&text=Bentota+3",
-          "/placeholder.svg?height=600&width=800&text=Bentota+4",
+          "/tour/b1.jpg",
+          "/tour/b2.jpg",
+          
         ],
         highlights: [
           "Water sports - Jet skiing, windsurfing, and banana boat rides",
@@ -574,12 +453,11 @@ export const tourCategories = [
         id:"Hummanaya Blow Hole",
         name: "Hummanaya Blow Hole",
         description: "Natural blowhole creating spectacular water sprays.",   
-        image: "/placeholder.svg?height=400&width=600&text=Hummanaya+Blow+Hole",
+        image: "/tour/hu.png",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Hummanaya+Blow+Hole+1",
-          "/placeholder.svg?height=600&width=800&text=Hummanaya+Blow+Hole+2",
-          "/placeholder.svg?height=600&width=800&text=Hummanaya+Blow+Hole+3",
-          "/placeholder.svg?height=600&width=800&text=Hummanaya+Blow+Hole+4",
+          "/tour/huu.jpg",
+          "/tour/huuu.jpg",
+          
         ],
         highlights: [
           "Natural phenomenon - Water shoots up to 30 meters high",
@@ -594,12 +472,11 @@ export const tourCategories = [
         id: "turtlehatchery",
         name: "Turtle Hatchery",
         description: "Conservation sites helping baby turtles reach the ocean.",
-        image: "/placeholder.svg?height=400&width=600&text=Turtle+Hatchery",
+        image: "/tour/t.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Turtle+Hatchery+1",
-          "/placeholder.svg?height=600&width=800&text=Turtle+Hatchery+2",
-          "/placeholder.svg?height=600&width=800&text=Turtle+Hatchery+3",
-          "/placeholder.svg?height=600&width=800&text=Turtle+Hatchery+4",
+          "/tour/t1.jpg",
+          "/tour/t2.jpg",
+         
         ],
         highlights: [
           "Conservation Efforts - Learn about turtle protection programs",
@@ -620,12 +497,11 @@ export const tourCategories = [
         id: "kitulgala",
         name: "Kitulgala",
         description: "White-water rafting and rainforest hikes.",
-        image: "/placeholder.svg?height=400&width=600&text=Kitulgala",
+        image: "/tour/kit.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Kitulgala+1",
-          "/placeholder.svg?height=600&width=800&text=Kitulgala+2",
-          "/placeholder.svg?height=600&width=800&text=Kitulgala+3",
-          "/placeholder.svg?height=600&width=800&text=Kitulgala+4",
+          "/tour/kit1.jpg",
+          "/tour/kit2.jpg",
+          
         ],
         highlights: [
           "White water rafting on the Kelani River with Grade 2-4 rapids",
@@ -636,53 +512,32 @@ export const tourCategories = [
         bestTime: "May to December when water levels are optimal for rafting.",
       },
       {
-        id: "maduganga",
-        name: "Madu Ganga",
-        description: "Tranquil mangrove river with boat safaris.",
-        image: "/placeholder.svg?height=400&width=600&text=Madu+Ganga",
-        images: [
-          "/placeholder.svg?height=600&width=800&text=Madu+Ganga+1",
-          "/placeholder.svg?height=600&width=800&text=Madu+Ganga+2",
-          "/placeholder.svg?height=600&width=800&text=Madu+Ganga+3",
-          "/placeholder.svg?height=600&width=800&text=Madu+Ganga+4",
-        ],
+      id: "madu-ganga",
+      name: "Madu Ganga River Safari",
+      description: "Mangrove ecosystem boat ride through serene waterways.",
+      image: "/tour/m.jpg",
+      images: [
+          "/tour/mm.jpg",
+          "/tour/mmm.webp",
+          
+        ],      
         highlights: [
-          "Boat safari through intricate mangrove forests",
-          "Visit to Cinnamon Island to see traditional processing",
-          "Fish therapy (natural fish spa) in designated areas",
-          "Rich biodiversity with birds, monitor lizards, and monkeys",
-        ],
-        bestTime: "Year-round, but the dry season (December to April) is most comfortable.",
-      },
-      {
-        id: "kalu-ganga",
-        name: "Kalu Ganga",
-        description: "Scenic river with kayaking and fishing opportunities.",
-        image: "/placeholder.svg?height=400&width=600&text=Kalu+Ganga",
-        images: [
-          "/placeholder.svg?height=600&width=800&text=Kalu+Ganga+1",
-          "/placeholder.svg?height=600&width=800&text=Kalu+Ganga+2",
-          "/placeholder.svg?height=600&width=800&text=Kalu+Ganga+3",
-          "/placeholder.svg?height=600&width=800&text=Kalu+Ganga+4",
-        ],
-        highlights: [
-          "Kayaking and canoeing through lush landscapes",
-          "Fishing opportunities for local species",
-          "Bird watching along the riverbanks",
-          "Peaceful environment away from tourist crowds",
-        ],
-        bestTime: "November to April for the best weather.",
-      },
+        "Mangrove forests and islands",
+        "Fish spa experience",
+        "Bird and monkey sightings"
+      ],
+      bestTime: "Dry season, November to April."
+    },
+      
       {
         id: "Lagoon-Kayaking",
         name: "Lagoon Kayaking",
         description: "Kayaking through serene lagoons and mangroves.",
-        image: "/placeholder.svg?height=400&width=600&text=Lagoon+Kayaking",
+        image: "/tour/ll.avif",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Lagoon+Kayaking+1",
-          "/placeholder.svg?height=600&width=800&text=Lagoon+Kayaking+2",
-          "/placeholder.svg?height=600&width=800&text=Lagoon+Kayaking+3",
-          "/placeholder.svg?height=600&width=800&text=Lagoon+Kayaking+4",
+          "/tour/l.jpg",
+          "/tour/lll.jpg",
+          
         ],
         highlights: [
           "Explore mangrove ecosystems and wildlife",
@@ -703,12 +558,11 @@ export const tourCategories = [
         id: "adamspeak",
         name: "Adam's Peak",
         description: "Sacred mountain climb with sunrise views and religious significance.",
-        image: "/placeholder.svg?height=400&width=600&text=Adams+Peak",
+        image: "/tour/a.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Adams+Peak+1",
-          "/placeholder.svg?height=600&width=800&text=Adams+Peak+2",
-          "/placeholder.svg?height=600&width=800&text=Adams+Peak+3",
-          "/placeholder.svg?height=600&width=800&text=Adams+Peak+4",
+          "/tour/aa.jpg",
+          "/tour/a2.jpg",
+          
         ],
         highlights: [
           "Sacred footprint (Sri Pada) revered by multiple religions",
@@ -722,12 +576,11 @@ export const tourCategories = [
         id: "knuckles",
         name: "Knuckles Mountain Range",
         description: "Biodiverse hiking trails with stunning mountain views.",
-        image: "/placeholder.svg?height=400&width=600&text=Knuckles+Mountain+Range",
+        image: "/tour/c1.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Knuckles+1",
-          "/placeholder.svg?height=600&width=800&text=Knuckles+2",
-          "/placeholder.svg?height=600&width=800&text=Knuckles+3",
-          "/placeholder.svg?height=600&width=800&text=Knuckles+4",
+          "/tour/c2.avif",
+          "/tour/c.jpg",
+          
         ],
         highlights: [
           "Diverse flora and fauna, including endemic species",
@@ -741,12 +594,11 @@ export const tourCategories = [
         id: "liptonseat",
         name: "Lipton's Seat",
         description: "Famous viewpoint with panoramic views of tea plantations.",
-        image: "/placeholder.svg?height=400&width=600&text=Liptons+Seat",
+        image: "/tour/li.webp",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Liptons+Seat+1",
-          "/placeholder.svg?height=600&width=800&text=Liptons+Seat+2",
-          "/placeholder.svg?height=600&width=800&text=Liptons+Seat+3",
-          "/placeholder.svg?height=600&width=800&text=Liptons+Seat+4",
+          "/tour/li1.jpg",
+          "/tour/li2.JPG",
+          
         ],  
         highlights: [
           "Breathtaking views of the surrounding hills and valleys",
@@ -760,12 +612,11 @@ export const tourCategories = [
         id: "littleadamspeak",
         name: "Little Adam's Peak",
         description: "Short hike with stunning views of Ella and surrounding hills.",
-        image: "/placeholder.svg?height=400&width=600&text=Little+Adams+Peak",
+        image: "/tour/w.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Little+Adams+Peak+1",
-          "/placeholder.svg?height=600&width=800&text=Little+Adams+Peak+2",
-          "/placeholder.svg?height=600&width=800&text=Little+Adams+Peak+3",
-          "/placeholder.svg?height=600&width=800&text=Little+Adams+Peak+4",
+          "/tour/w1.jpg",
+          "/tour/w2.jpg",
+          
         ],
         highlights: [
           "Stunning panoramic views of Ella Rock and the valley",
@@ -779,12 +630,11 @@ export const tourCategories = [
         id: "Nine Arches Bridge",
         name: "Nine Arches Bridge",
         description: "Iconic railway bridge surrounded by lush greenery.",
-        image: "/placeholder.svg?height=400&width=600&text=Nine+Arches+Bridge",
+        image: "/tour/o.webp",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Nine+Arches+Bridge+1",
-          "/placeholder.svg?height=600&width=800&text=Nine+Arches+Bridge+2",
-          "/placeholder.svg?height=600&width=800&text=Nine+Arches+Bridge+3",
-          "/placeholder.svg?height=600&width=800&text=Nine+Arches+Bridge+4",
+          "/tour/o1.jpg",
+          "/tour/o2.webp",
+          
         ],
         highlights: [
           "Stunning architecture and engineering marvel",
@@ -798,12 +648,11 @@ export const tourCategories = [
         id: "bakerfalls",
         name: "Baker's Falls",
         description: "Beautiful waterfall in Horton Plains National Park.",
-        image: "/placeholder.svg?height=400&width=600&text=Bakers+Falls",
+        image: "/tour/q.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Bakers+Falls+1",
-          "/placeholder.svg?height=600&width=800&text=Bakers+Falls+2",
-          "/placeholder.svg?height=600&width=800&text=Bakers+Falls+3",
-          "/placeholder.svg?height=600&width=800&text=Bakers+Falls+4",
+          "/tour/q1.webp",
+          "/tour/q2.jpg",
+          
         ],
         highlights: [
           "Stunning waterfall surrounded by lush vegetation",
@@ -817,12 +666,11 @@ export const tourCategories = [
         id:"hortonplains",
         name: "Horton Plains National Park",
         description: "UNESCO World Heritage site with unique ecosystems and wildlife.",
-        image: "/placeholder.svg?height=400&width=600&text=Horton+Plains",    
+        image: "/tour/f.jpg",    
         images: [
-          "/placeholder.svg?height=600&width=800&text=Horton+Plains+1",
-          "/placeholder.svg?height=600&width=800&text=Horton+Plains+2",
-          "/placeholder.svg?height=600&width=800&text=Horton+Plains+3",
-          "/placeholder.svg?height=600&width=800&text=Horton+Plains+4",
+          "/tour/f1.jpg",
+          "/tour/f2.webp",
+          
         ],
         highlights: [
           "World's End - Dramatic cliff with stunning views",
@@ -837,12 +685,11 @@ export const tourCategories = [
         id: "ellarock",
         name: "Ella Rock",
         description: "Scenic hike with valley views and peaceful paths.",
-        image: "/placeholder.svg?height=400&width=600&text=Ella+Rock",
+        image: "/tour/ella.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Ella+Rock+1",
-          "/placeholder.svg?height=600&width=800&text=Ella+Rock+2",
-          "/placeholder.svg?height=600&width=800&text=Ella+Rock+3",
-          "/placeholder.svg?height=600&width=800&text=Ella+Rock+4",
+          "/tour/ellaa.jpg",
+          "/tour/ellaaa.webp",
+          
         ],
         highlights: [
           "Panoramic views of Ella Gap and surrounding mountains",
@@ -863,12 +710,11 @@ export const tourCategories = [
         id: "vesak",
         name: "Vesak Festival",
         description: "Lantern-filled festival celebrating Buddha's birth, enlightenment, and death.",
-        image: "/placeholder.svg?height=400&width=600&text=Vesak",
+        image: "/tour/vesak.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Vesak+1",
-          "/placeholder.svg?height=600&width=800&text=Vesak+2",
-          "/placeholder.svg?height=600&width=800&text=Vesak+3",
-          "/placeholder.svg?height=600&width=800&text=Vesak+4",
+          "/tour/vesak1.jpg",
+          "/tour/vee.jpg",
+          
         ],
         highlights: [
           "Colorful lanterns illuminating streets and homes",
@@ -882,12 +728,11 @@ export const tourCategories = [
         id: "perahera",
         name: "Kandy Esala Perahera",
         description: "Majestic Kandy procession with decorated elephants and dancers.",
-        image: "/placeholder.svg?height=400&width=600&text=Esala+Perahera",
+        image: "/tour/vesak2.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Esala+Perahera+1",
-          "/placeholder.svg?height=600&width=800&text=Esala+Perahera+2",
-          "/placeholder.svg?height=600&width=800&text=Esala+Perahera+3",
-          "/placeholder.svg?height=600&width=800&text=Esala+Perahera+4",
+          "/tour/ve.jpeg",
+          "/tour/veee.jpg",
+          
         ],
         highlights: [
           "Over 100 elegantly decorated elephants in procession",
@@ -901,12 +746,11 @@ export const tourCategories = [
         id: "newyear",
         name: "Sinhala and Tamil New Year",
         description: "Cultural festival with traditional games and food.",
-        image: "/placeholder.svg?height=400&width=600&text=New+Year",
+        image: "/tour/sin.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=New+Year+1",
-          "/placeholder.svg?height=600&width=800&text=New+Year+2",
-          "/placeholder.svg?height=600&width=800&text=New+Year+3",
-          "/placeholder.svg?height=600&width=800&text=New+Year+4",
+          "/tour/aurudu.jpg",
+          "/tour/aurudu1.jpg",
+          
         ],
         highlights: [
           "Traditional games" ,       
@@ -917,25 +761,7 @@ export const tourCategories = [
     ],
         bestTime: "April 13th or 14th (dates vary each year).",
       },
-      {
-        id: "deepavali",
-        name: "Deepavali Festival",
-        description: "Festival of Lights celebrated by the Tamil community.",
-        image: "/placeholder.svg?height=400&width=600&text=Deepavali",
-        images: [
-          "/placeholder.svg?height=600&width=800&text=Deepavali+1",
-          "/placeholder.svg?height=600&width=800&text=Deepavali+2",
-          "/placeholder.svg?height=600&width=800&text=Deepavali+3",
-          "/placeholder.svg?height=600&width=800&text=Deepavali+4",
-        ],
-        highlights: [
-          "Lighting oil lamps and candles to symbolize victory of light over darkness",
-          "Colorful rangoli designs at homes and temples",
-          "Fireworks and sparklers lighting up the night sky",
-          "Sharing sweets and festive meals with family and friends",
-        ],
-        bestTime: "October or November (dates vary each year).",
-      },
+      
     ],
   },
   {
@@ -943,54 +769,16 @@ export const tourCategories = [
     name: "Scenic & Upcountry Escapes",
     icon: <MountainIcon className="h-5 w-5 text-maroon-700" />,
     activities: [
-      {
-        id: "nuwaraeliya",
-        name: "Nuwara Eliya",
-        description: "Colonial-style town known as 'Little England'.",
-        image: "/placeholder.svg?height=400&width=600&text=Nuwara+Eliya",
-        images: [
-          "/placeholder.svg?height=600&width=800&text=Nuwara+Eliya+1",
-          "/placeholder.svg?height=600&width=800&text=Nuwara+Eliya+2",
-          "/placeholder.svg?height=600&width=800&text=Nuwara+Eliya+3",
-          "/placeholder.svg?height=600&width=800&text=Nuwara+Eliya+4",
-        ],
-        highlights: [
-          "Colonial architecture and English-style gardens",
-          "Tea plantations with factory tours and tastings",
-          "Gregory Lake with boating and recreational activities",
-          "Horton Plains National Park and World's End nearby",
-        ],
-        bestTime: "March to May for the best weather, or April for the Sinhala New Year celebrations.",
-      },
-      {
-        id: "ella",
-        name: "Ella",
-        description: "Lush hill town with hikes, cafes, and breathtaking scenery.",
-        image: "/placeholder.svg?height=400&width=600&text=Ella",
-        images: [
-          "/placeholder.svg?height=600&width=800&text=Ella+1",
-          "/placeholder.svg?height=600&width=800&text=Ella+2",
-          "/placeholder.svg?height=600&width=800&text=Ella+3",
-          "/placeholder.svg?height=600&width=800&text=Ella+4",
-        ],
-        highlights: [
-          "Nine Arch Bridge - Iconic colonial-era railway bridge",
-          "Little Adam's Peak - Easy hike with panoramic views",
-          "Ravana Falls - Beautiful waterfall with mythological significance",
-          "Scenic train journey from Ella to Kandy",
-        ],
-        bestTime: "January to March for the driest weather and clearest views.",
-      },
+      
       {
         id:"strawberryfarms",
         name: "Strawberry Farms",
         description: "Visit strawberry farms and enjoy fresh strawberries.",
-        image: "/placeholder.svg?height=400&width=600&text=Strawberry+Farms",
+        image: "/tour/sr.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Strawberry+Farms+1",
-          "/placeholder.svg?height=600&width=800&text=Strawberry+Farms+2",
-          "/placeholder.svg?height=600&width=800&text=Strawberry+Farms+3",
-          "/placeholder.svg?height=600&width=800&text=Strawberry+Farms+4",
+          "/tour/last.jpg",
+          "/tour/sr2.jpg",
+          
         ],
         highlights: [
           "Pick your own strawberries in the fields",
@@ -1004,12 +792,11 @@ export const tourCategories = [
         id:"adisham",
         name: "Adisham Bungalow",
         description: "Colonial-era bungalow with beautiful gardens and views.",
-        image: "/placeholder.svg?height=400&width=600&text=Adisham+Bungalow",
+        image: "/tour/as.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Adisham+Bungalow+1",
-          "/placeholder.svg?height=600&width=800&text=Adisham+Bungalow+2",
-          "/placeholder.svg?height=600&width=800&text=Adisham+Bungalow+3",
-          "/placeholder.svg?height=600&width=800&text=Adisham+Bungalow+4",
+          "/tour/as1.webp",
+          "/tour/as2.jpg",
+          
         ],
         highlights: [
           "Beautiful gardens with a variety of flowers and plants",
@@ -1023,12 +810,11 @@ export const tourCategories = [
         id:"riverston",
         name: "Riverston",
         description: "Scenic area with hiking trails and stunning views.",
-        image: "/placeholder.svg?height=400&width=600&text=Riverston",
+        image: "/tour/riv.jpeg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Riverston+1",
-          "/placeholder.svg?height=600&width=800&text=Riverston+2",
-          "/placeholder.svg?height=600&width=800&text=Riverston+3",
-          "/placeholder.svg?height=600&width=800&text=Riverston+4",
+          "/tour/riv1.jpeg",
+          "/tour/riv2.jpeg",
+          
         ],
         highlights: [
           "Hiking trails with stunning views of the Knuckles Range",

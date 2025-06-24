@@ -8,6 +8,8 @@ import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { IntroSection } from "@/components/intro-section"
 import { PackagesSection } from "@/components/packages-section"
+import { FeedbackButton } from "@/components/feedback-button"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -22,8 +24,21 @@ export default function Home() {
         <BookingForm />
         <CustomerFeedback />
       </main>
+      <div className="flex justify-center py-4">
+        <FeedbackButton />
+      </div>
       <Footer />
       <FloatingButtons />
+      <div className="relative w-16 h-16 md:w-24 md:h-24">
+        <Image
+          src="/logo.png"
+          alt="Explorative Tours Logo"
+          fill
+          className="object-contain"
+          priority
+          sizes="(max-width: 768px) 64px, 96px"
+        />
+      </div>
     </div>
   )
 }

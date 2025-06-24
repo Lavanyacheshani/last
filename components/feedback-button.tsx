@@ -52,10 +52,10 @@ export function FeedbackButton() {
         <Button 
           className="bg-gradient-to-r from-maroon-600 to-maroon-800 
                      hover:from-maroon-700 hover:to-maroon-900 text-white 
-                     px-8 py-6 text-lg shadow-xl hover:shadow-maroon-700/30 
-                     transition-all duration-300 rounded-full"
+                     px-4 py-2 text-sm shadow-lg hover:shadow-maroon-700/30 
+                     transition-all duration-300 rounded-md w-auto min-w-[140px]"
         >
-          Share Your Experience
+          Share Experience
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">

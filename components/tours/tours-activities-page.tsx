@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { FeedbackButton } from "@/components/feedback-button"
 import { BackButton } from "@/components/back-button"
 import { useLanguage } from "@/components/language-context"
 import { SimpleCategorySection } from "@/components/tours/simple-category-section"
@@ -109,7 +108,6 @@ export function ToursActivitiesPage() {
           </div>
         </section>
       </main>
-      <FeedbackButton />
 
       {/* Activity Modal */}
       {isModalOpen && selectedActivity && <ActivityModal activity={selectedActivity} onClose={closeModal} />}

@@ -7,7 +7,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { notFound } from "next/navigation"
 import { Footer } from "@/components/footer"
 import { FloatingButtons } from "@/components/floating-buttons"
-import { FeedbackButton } from "@/components/feedback-button"
 import { BackButton } from "@/components/back-button"
 import { useLanguage } from "@/components/language-context"
 import { motion } from "framer-motion"
@@ -188,7 +187,7 @@ const destinationsData = {
       },
       {
         title: "Fly the Flying Ravana Mega Zipline",
-        description: "Soar over tea estates and forested hills on one of South Asia’s longest and fastest ziplines.",
+        description: "Soar over tea estates and forested hills on one of South Asia's longest and fastest ziplines.",
         image: "/des/e7.jpg", 
       },
     ],
@@ -1320,9 +1319,6 @@ export default function DestinationPage({ params }: { params: { slug: string } }
           )}
         </div>
       </section>
-      <Footer />
-      <FloatingButtons />
-      <FeedbackButton />
     </div>
   )
 }

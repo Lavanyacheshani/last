@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Explorative Tours(Pvt) LTD Sri Lanka</h3>
+            <h3 className="text-xl font-bold mb-4">Explorative Tours(Pvt) Ltd Sri Lanka</h3>
             <p className="text-gray-300 mb-4">
               Your premier travel partner in Sri Lanka, offering unforgettable experiences with safety and comfort.
             </p>
@@ -46,7 +46,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#tours" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="tours" className="text-gray-300 hover:text-white transition-colors">
                   Tours & Activities
                 </Link>
               </li>

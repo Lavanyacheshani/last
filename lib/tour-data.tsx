@@ -12,10 +12,8 @@ export const tourCategories = [
         description: "The ancient capital, home to sacred Bodhi Tree and massive stupas.",
         image: "/tour/1.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Anuradhapura+1",
-          "/placeholder.svg?height=600&width=800&text=Anuradhapura+2",
-          "/placeholder.svg?height=600&width=800&text=Anuradhapura+3",
-          "/placeholder.svg?height=600&width=800&text=Anuradhapura+4",
+          "/tour/anu1.jpg",
+          "/tour/anu2.jpg",
         ],
         highlights: [
           "Sacred Bodhi Tree - Oldest historically authenticated tree in the world",
@@ -31,10 +29,9 @@ export const tourCategories = [
         description: "UNESCO site showcasing well-preserved ruins of medieval Sri Lanka.",
         image: "/tour/2.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Polonnaruwa+1",
-          "/placeholder.svg?height=600&width=800&text=Polonnaruwa+2",
-          "/placeholder.svg?height=600&width=800&text=Polonnaruwa+3",
-          "/placeholder.svg?height=600&width=800&text=Polonnaruwa+4",
+          "/tour/pol1.jpg",
+          "/tour/pol2.jpg",
+          
         ],
         highlights: [
           "Gal Vihara - Rock temple with magnificent Buddha statues",
@@ -50,10 +47,8 @@ export const tourCategories = [
         description: "A spiritual cave temple with Buddhist murals and statues.",
         image: "/tour/3.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Dambulla+1",
-          "/placeholder.svg?height=600&width=800&text=Dambulla+2",
-          "/placeholder.svg?height=600&width=800&text=Dambulla+3",
-          "/placeholder.svg?height=600&width=800&text=Dambulla+4",
+          "/tour/dam1.jpg",
+          "/tour/dam2.jpg",
         ],
         highlights: [
           "Five caves containing 153 Buddha statues and hundreds of paintings",
@@ -69,10 +64,8 @@ export const tourCategories = [
         description: "Iconic Lion Rock fortress with frescoes and royal gardens.",
         image: "/tour/4.jpg",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
+          "/tour/sig1.jpg",
+          "/tour/sig2.jpg",
         ],
         highlights: [
           "Lion's Paw Entrance - Massive stone lion paws guarding the final ascent",
@@ -88,10 +81,8 @@ export const tourCategories = [
         description: "Sacred city with the Temple of the Tooth and vibrant cultural shows.",
         image: "/tour/5.PNG",
         images: [
-          "/placeholder.svg?height=600&width=800&text=Kandy+1",
-          "/placeholder.svg?height=600&width=800&text=Kandy+2",
-          "/placeholder.svg?height=600&width=800&text=Kandy+3",
-          "/placeholder.svg?height=600&width=800&text=Kandy+4",
+          "/tour/kan1.jpg",
+          "/tour/kan2.jpg",
         ],
         highlights: [
           "Temple of the Sacred Tooth Relic - Most revered Buddhist site in Sri Lanka",
@@ -107,10 +98,8 @@ export const tourCategories = [
       description: "Unique spiral tower offering panoramic views and biodiversity.",
       image: "/tour/6.PNG",
       images: [
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+1",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+2",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+3",
-          "/placeholder.svg?height=600&width=800&text=Sigiriya+4",
+          "/tour/amb1.jpg",
+          "/tour/amb2.jpg",
         ],
       highlights: [
         "Spiral tower with 360° views",
@@ -1029,25 +1018,6 @@ export const tourCategories = [
           "Peaceful atmosphere for relaxation and photography",
         ],
         bestTime: "Year-round, but best visited during the day for garden exploration.",
-      },
-      {
-        id:"riverston",
-        name: "Riverston",
-        description: "Scenic area with hiking trails and stunning views.",
-        image: "/placeholder.svg?height=400&width=600&text=Riverston",
-        images: [
-          "/placeholder.svg?height=600&width=800&text=Riverston+1",
-          "/placeholder.svg?height=600&width=800&text=Riverston+2",
-          "/placeholder.svg?height=600&width=800&text=Riverston+3",
-          "/placeholder.svg?height=600&width=800&text=Riverston+4",
-        ],
-        highlights: [
-          "Hiking trails with stunning views of the Knuckles Range",
-          "Natural rock formations and waterfalls",
-          "Bird watching and wildlife spotting opportunities",
-          "Peaceful environment away from tourist crowds",
-        ],
-        bestTime: "December to April for the best weather and visibility.",
       },
       {
         id:"riverston",

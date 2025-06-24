@@ -69,7 +69,7 @@ export function PackagesSection() {
       icon: <Users className="h-6 w-6 md:h-8 md:w-8" />,
       features: [
         "Airport pickup & drop-off service",
-        "Daily fuel and professional driver included",
+        "Fuel and professional driver included",
         "All road tolls & parking tickets covered",
         "Driver's food and accommodation included",
         "Professional English-speaking driver guide",
@@ -211,7 +211,7 @@ export function PackagesSection() {
                     {pkg.freeOffers.length > 0 && (
                       <div>
                         <h4 className="font-semibold text-base md:text-lg mb-4 text-gray-800">
-                          Free Offers:
+                          Special Offers:
                         </h4>
                         <ul className="space-y-3">
                           {pkg.freeOffers.map((offer, index) => (

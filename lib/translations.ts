@@ -21,18 +21,18 @@ export const translations = {
     feature_safeTravel_title: "Safe Travel",
     feature_safeTravel_desc: "Travel with complete peace of mind — we prioritize your safety with vetted drivers, modern vehicles, and 24/7 support.",
     feature_expertGuides_title: "Expert Guides",
-    feature_expertGuides_desc: "Our local guides are storytellers and cultural ambassadors who bring Sri Lanka’s rich heritage to life.",
+    feature_expertGuides_desc: "Our local guides are storytellers and cultural ambassadors who bring Sri Lanka's rich heritage to life.",
     feature_flexibleItineraries_title: "Flexible Itineraries",
     feature_flexibleItineraries_desc: "Personalize your journey. Whether you want adventure, relaxation, or culture—we adapt to your rhythm.",
     feature_premiumExperience_title: "Premium Experience",
     feature_premiumExperience_desc: "Experience first-class hospitality, handpicked destinations, and unforgettable moments tailored just for you.",
     feature_smallGroups_title: "Small Groups",
-    feature_smallGroups_desc: "We are Sri Lanka’s only dedicated travel partner introducing exclusive travel packages for solo adventurers and couples.",
+    feature_smallGroups_desc: "We are Sri Lanka's only dedicated travel partner introducing exclusive travel packages for solo adventurers and couples.",
     feature_authenticConnections_title: "Authentic Connections",
-    feature_authenticConnections_desc: "Go beyond sightseeing. Meet real locals, share meals, and connect with Sri Lanka’s warm spirit.",
+    feature_authenticConnections_desc: "Go beyond sightseeing. Meet real locals, share meals, and connect with Sri Lanka's warm spirit.",
     // Intro Section
     introTitle: "Welcome to Explorative Tours!",
-    introParagraph1: "As one of Sri Lanka’s leading travel agencies, we are committed to providing you with an unforgettable travel experience on the island. We offer access to the finest hotels, top tourist attractions, and exciting adventure activities, always prioritizing your comfort and satisfaction.",
+    introParagraph1: "As one of Sri Lanka's leading travel agencies, we are committed to providing you with an unforgettable travel experience on the island. We offer access to the finest hotels, top tourist attractions, and exciting adventure activities, always prioritizing your comfort and satisfaction.",
     introParagraph2: "With Explorative Tours, you can enjoy a safe journey filled with rich experiences at an affordable cost. If you're looking to break away from the ordinary and embrace a fresh, unique travel adventure, we are the perfect choice for you.",
     introAboutBoxText: "We are the premier travel agency in Sri Lanka, offering special protection and services. Our mission is to provide maximum travel experience while ensuring your safety and enjoyment.",
     introImageAlt: "Sri Lankan landscape",
@@ -95,6 +95,11 @@ export const translations = {
     showLess: "Show Less",
     highlights: "Highlights",
     bestTimeToVisit: "Best Time to Visit",
+    thingsToDo: "Things to Do in",
+    travelTips: "Travel Tips",
+    planYourTrip: "Let us help you plan the perfect trip to",
+    and: "and",
+    otherDestinations: "other amazing destinations in Sri Lanka",
 
     // Categories
     category_cultural: "Cultural & Heritage",
@@ -279,7 +284,7 @@ export const translations = {
     destination_kandy_desc: "斯里兰卡的文化之都，佛牙寺和风景优美的湖景所在地。",
     destination_kandy_alt: "斯里兰卡康提",
     destination_nuwaraeliya_name: "努沃勒埃利耶",
-    destination_nuwaraeliya_desc: "被称为“小英格兰”，拥有茶园、凉爽的气候和美丽的花园。",
+    destination_nuwaraeliya_desc: "被称为'小英格兰'，拥有茶园、凉爽的气候和美丽的花园。",
     destination_nuwaraeliya_alt: "斯里兰卡努沃勒埃利耶",
     destination_colombo_name: "科伦坡",
     destination_colombo_desc: "斯里兰卡充满活力的首都，融合了现代生活、殖民时期建筑和购物场所。",
@@ -320,7 +325,12 @@ export const translations = {
     showMore: "显示更多活动",
     showLess: "显示更少",
     highlights: "亮点",
-    bestTimeToVisit: "最佳参观时间",
+    bestTimeToVisit: "最佳游览时间",
+    thingsToDo: "在",
+    travelTips: "旅行贴士",
+    planYourTrip: "让我们帮您规划完美的",
+    and: "和",
+    otherDestinations: "斯里兰卡其他令人惊叹的目的地",
 
     // Categories
     category_cultural: "文化与遗产",
@@ -374,7 +384,8 @@ export const translations = {
     galleryGuestsDesc:
       "看看我们的客人在体验斯里兰卡的魔力时脸上洋溢的喜悦和惊奇。这些真实的时刻捕捉了旅行和冒险的变革力量。",
     galleryCtaTitle: "准备好在斯里兰卡创造您自己难忘的回忆了吗？",
-    galleryCtaDesc: "让我们帮助您规划完美的斯里兰卡冒险之旅，根据您的兴趣、偏好和旅行风格量身定制。",
+    galleryCtaDesc:
+      "让我们帮助您规划完美的斯里兰卡冒险之旅，根据您的兴趣、偏好和旅行风格量身定制。",
     exploreActivities: "探索我们的活动",
     discoverExperiences: "探索斯里兰卡提供的各种体验",
     feedbackTitle: "分享您的反馈",
@@ -484,6 +495,11 @@ export const translations = {
     showLess: "Weniger anzeigen",
     highlights: "Höhepunkte",
     bestTimeToVisit: "Beste Reisezeit",
+    thingsToDo: "Aktivitäten in",
+    travelTips: "Reisetipps",
+    planYourTrip: "Lassen Sie uns Ihnen helfen, die perfekte Reise zu planen",
+    and: "und",
+    otherDestinations: "andere erstaunliche Reiseziele in Sri Lanka",
 
     // Categories
     category_cultural: "Kultur & Erbe",
@@ -639,6 +655,11 @@ export const translations = {
     showLess: "Afficher moins",
     highlights: "Points forts",
     bestTimeToVisit: "Meilleure période pour visiter",
+    thingsToDo: "Activités à",
+    travelTips: "Conseils de voyage",
+    planYourTrip: "Laissez-nous vous aider à planifier le voyage parfait vers",
+    and: "et",
+    otherDestinations: "d'autres destinations incroyables au Sri Lanka",
 
     // Categories
     category_cultural: "Culture & Patrimoine",
@@ -736,7 +757,7 @@ export const translations = {
     destination_kandy_desc: "श्रीलंका की सांस्कृतिक राजधानी, टेंपल ऑफ द टूथ और सुंदर झील के दृश्यों का घर।",
     destination_kandy_alt: " कैंडी, श्रीलंका",
     destination_nuwaraeliya_name: "नुवारा एलिया",
-    destination_nuwaraeliya_desc: " 'लिटिल इंग्लैंड' के रूप में जाना जाता है, जिसमें चाय बागान, ठंडी जलवायु और सुंदर उद्यान हैं।",
+    destination_nuwaraeliya_desc: "'लिटिल इंग्लैंड' के रूप में जाना जाता है, जिसमें चाय बागान, ठंडी जलवायु और सुंदर उद्यान हैं।",
     destination_nuwaraeliya_alt: "नुवारा एलिया, श्रीलंका",
     destination_colombo_name: "कोलंबो",
     destination_colombo_desc: "श्रीलंका की जीवंत राजधानी जिसमें आधुनिक जीवन, औपनिवेशिक इमारतें और खरीदारी का मिश्रण है।",
@@ -780,6 +801,11 @@ export const translations = {
     showLess: "कम दिखाएं",
     highlights: "मुख्य आकर्षण",
     bestTimeToVisit: "घूमने का सबसे अच्छा समय",
+    thingsToDo: "में करने के लिए चीजें",
+    travelTips: "यात्रा के टिप्स",
+    planYourTrip: "हम आपकी सहायता करेंगे",
+    and: "और",
+    otherDestinations: "श्रीलंका के अन्य अद्भुत गंतव्यों",
 
     // Categories
     category_cultural: "सांस्कृतिक और विरासत",
@@ -919,6 +945,11 @@ export const translations = {
     showLess: "Показать меньше",
     highlights: "Основные моменты",
     bestTimeToVisit: "Лучшее время для посещения",
+    thingsToDo: "Чем заняться в",
+    travelTips: "Советы путешественникам",
+    planYourTrip: "Позвольте нам помочь вам спланировать идеальную поездку в",
+    and: "и",
+    otherDestinations: "другие удивительные места Шри-Ланки",
 
     // Categories
     category_cultural: "Культура и наследие",

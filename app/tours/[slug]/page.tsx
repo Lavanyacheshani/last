@@ -1,8 +1,8 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { FeedbackButton } from "@/components/feedback-button"
 import { BackButton } from "@/components/back-button"
 import { notFound } from "next/navigation"
+import { useLanguage } from "@/components/language-context"
 
 // This would typically come from a database or API
 // For now, we'll just include a few examples
@@ -160,6 +160,7 @@ const activitiesData = {
 
 export default function ActivityPage({ params }: { params: { slug: string } }) {
   const { slug } = params
+  const { t } = useLanguage()
   const activity = activitiesData[slug as keyof typeof activitiesData]
 
   if (!activity) {
@@ -192,7 +193,7 @@ export default function ActivityPage({ params }: { params: { slug: string } }) {
         {/* About Section */}
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">About {activity.name}</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">{t.about || "About"} {activity.name}</h2>
             <div className="prose prose-emerald max-w-none">
               <p className="text-gray-700 leading-relaxed whitespace-pre-line">{activity.fullDescription}</p>
             </div>
@@ -202,7 +203,7 @@ export default function ActivityPage({ params }: { params: { slug: string } }) {
         {/* Highlights Section */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Highlights</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">{t.highlights || "Highlights"}</h2>
             <ul className="grid md:grid-cols-2 gap-4">
               {activity.highlights.map((highlight, index) => (
                 <li key={index} className="flex items-start p-4 bg-white rounded-lg shadow-sm">
@@ -219,7 +220,7 @@ export default function ActivityPage({ params }: { params: { slug: string } }) {
         {/* Activities Section */}
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Things to Do in {activity.name}</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">{t.thingsToDo || "Things to Do in"} {activity.name}</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {activity.activities.map((item, index) => (
                 <div key={index} className="p-4 bg-gray-50 rounded-lg">
@@ -238,7 +239,7 @@ export default function ActivityPage({ params }: { params: { slug: string } }) {
         {/* Best Time to Visit */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Best Time to Visit</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">{t.bestTimeToVisit || "Best Time to Visit"}</h2>
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <p className="text-gray-700 leading-relaxed">{activity.bestTime}</p>
             </div>
@@ -248,7 +249,7 @@ export default function ActivityPage({ params }: { params: { slug: string } }) {
         {/* Travel Tips */}
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Travel Tips</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">{t.travelTips || "Travel Tips"}</h2>
             <ul className="grid md:grid-cols-2 gap-4">
               {activity.tips.map((tip, index) => (
                 <li key={index} className="flex items-start p-4 bg-gray-50 rounded-lg">
@@ -265,17 +266,16 @@ export default function ActivityPage({ params }: { params: { slug: string } }) {
         {/* Book Now Section */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Ready to Experience {activity.name}?</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">{t.readyToExperience || "Ready to Experience"} {activity.name}?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-              Let us help you plan the perfect trip to {activity.name} and other amazing destinations in Sri Lanka.
+              {t.planYourTrip || "Let us help you plan the perfect trip to"} {activity.name} {t.and || "and"} {t.otherDestinations || "other amazing destinations in Sri Lanka"}.
             </p>
             <Button asChild size="lg" className="bg-maroon-700 hover:bg-maroon-800">
-              <a href="/#booking">Book Your Tour Now</a>
+              <a href="/#booking">{t.bookNow || "Book Your Tour Now"}</a>
             </Button>
           </div>
         </section>
       </main>
-      <FeedbackButton />
     </div>
   )
 }

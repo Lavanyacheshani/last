@@ -829,6 +829,78 @@ const destinationsData = {
       "Local Market Visits",
     ],
   },
+  // ...existing code...
+  yala: {
+    name: "Yala",
+    image: "/des/yala-main.jpg",
+    themeBg: "beach",
+    description: "Sri Lanka’s premier national park, famous for leopards, elephants, and diverse wildlife.",
+    fullDescription: `Yala National Park, located in the southeast of Sri Lanka, is the country’s most visited and second largest national park. It is renowned for its variety of wild animals, especially leopards, elephants, and crocodiles. The park’s landscape is a mix of dry forest, grasslands, and lagoons, making it a haven for wildlife enthusiasts and photographers.
+
+In addition to its rich biodiversity, Yala is home to ancient ruins and religious sites, offering a unique blend of nature and history. Jeep safaris are the best way to explore the park and spot its famous residents.`,
+    highlights: [
+      {
+        title: "Leopard Spotting",
+        description: "Yala has one of the highest leopard densities in the world.",
+        icon: Camera,
+      },
+      {
+        title: "Elephant Herds",
+        description: "See wild elephants roaming freely in their natural habitat.",
+        icon: Mountain,
+      },
+      {
+        title: "Bird Watching",
+        description: "Over 200 bird species, including rare and endemic birds.",
+        icon: Leaf,
+      },
+      {
+        title: "Crocodile Watching",
+        description: "Spot large crocodiles basking along the park’s water bodies.",
+        icon: Waves,
+      },
+      {
+        title: "Ancient Sithulpawwa Monastery",
+        description: "A historic Buddhist monastery within the park.",
+        icon: Landmark,
+      },
+    ],
+    gallery: [
+      "/des/Y1.jpg",
+      "/des/Y4.jpg",
+      "/des/yala1.jpg",
+      "/des/yala4.jpg",
+    ],
+    thingsToDo: [
+      {
+        title: "Go on a Jeep Safari",
+        description: "Experience the thrill of spotting leopards, elephants, sloth bears, and more on a guided safari.",
+        image: "/des/Y2.jpg",
+      },
+      {
+        title: "Bird Watching Tours",
+        description: "Join a birding tour to spot rare and endemic species in Yala’s diverse habitats.",
+        image: "/des/yala2.jpg",
+      },
+      {
+        title: "Visit Sithulpawwa Monastery",
+        description: "Explore this ancient Buddhist monastery and enjoy panoramic views of the park.",
+        image: "/des/yala3.jpg",
+      },
+      {
+        title: "Photography Expeditions",
+        description: "Capture the park’s stunning wildlife and landscapes with your camera.",
+        image: "/des/yala4.jpg",
+      },
+    ],
+    popularActivities: [
+      "Wildlife Safaris",
+      "Bird Watching",
+      "Photography",
+      "Nature Walks",
+      "Cultural Visits",
+    ],
+  },
 }
 
 // Helper function to get background gradient based on theme

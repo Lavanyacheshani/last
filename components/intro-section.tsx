@@ -57,7 +57,7 @@ export function IntroSection() {
             <div className="absolute -top-4 -right-4 h-24 w-24 rounded-full bg-amber-400 p-3 text-white shadow-xl flex flex-col items-center justify-center space-y-1">
               
               <div className="text-center">
-                <div className="text-xl font-bold">500+</div>
+                <div className="text-xl font-bold">1000+</div>
                 <div className="text-[10px] leading-tight">{t?.introHappyClients || "Happy Clients"}</div>
               </div>
             </div>

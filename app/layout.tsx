@@ -11,7 +11,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Explorative Tours - Sri Lanka Travel Agency",
   description: "Experience the beauty and culture of Sri Lanka with the island's leading travel agency",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

@@ -49,12 +49,7 @@ export function DestinationsSection() {
       image: "/des/anura.jpeg",
       description: "Ancient city with well-preserved ruins of an ancient Sinhalese civilization.",
     },
-    {
-      name: "Polonnaruwa",
-      slug: "polonnaruwa",
-      image: "/des/polon.jpg",
-      description: "Medieval capital with impressive stone temples, ancient structures, and the famous Gal Vihara.",
-    },
+    
     {
       name: "Trincomalee",
       slug: "trincomalee",
@@ -72,6 +67,12 @@ export function DestinationsSection() {
       slug: "arugam-bay",
       image: "/des/aru.jpg",
       description: "World-renowned surfing destination with a laid-back atmosphere and beautiful beaches.",
+    },
+    {
+      name: "Yala",
+      slug: "yala",
+      image: "/des/yala-main.jpg",
+      description: "Sri Lanka’s premier national park, famous for leopards, elephants, and diverse wildlife.",
     },
   ]
 

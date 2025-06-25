@@ -20,12 +20,12 @@ export function LanguageSwitcher({ onLanguageChange }: LanguageSwitcherProps = {
       onLanguageChange(lang)
     }
   }
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="sm" className="flex items-center gap-2 rounded-full">
           <Globe size={16} className="text-emerald-600" />
+          <span className="inline sm:hidden">Change Language</span>
           <span className="hidden sm:inline">{language}</span>
         </Button>
       </DropdownMenuTrigger>

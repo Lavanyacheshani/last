@@ -29,16 +29,6 @@ export default function Home() {
       </div>
       <Footer />
       <FloatingButtons />
-      <div className="relative w-16 h-16 md:w-24 md:h-24">
-        <Image
-          src="/logo.png"
-          alt="Explorative Tours Logo"
-          fill
-          className="object-contain"
-          priority
-          sizes="(max-width: 768px) 64px, 96px"
-        />
-      </div>
     </div>
   )
 }

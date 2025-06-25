@@ -392,6 +392,23 @@ export const tourCategories = [
         bestTime: "November to April for the best beach weather.",
       },
       {
+        id:"Hirikatiya Beach",
+        name: "Hirikatiya",
+        description: "Hidden gem with a crescent-shaped bay and calm waters.",
+        image: "/tour/hirikatiya.webp",
+        images: [
+          "/tour/hirikatiya1.jpg",      
+          "/tour/hirikatiya2.jpg",
+        ],
+        highlights: [
+          "Crescent-shaped bay with calm waters ideal for swimming",
+          "Great for beginner surfers and paddleboarding",    
+          "Relaxed, less commercialized atmosphere",
+          "Nearby cafes and beach huts for food and drinks",
+        ],
+        bestTime: "November to April for the best beach weather.",
+      },
+      {
         id: "kalpitiya",
         name: "Kalpitiya",
         description: "Kite surfing hotspot with pristine beaches and lagoons.",

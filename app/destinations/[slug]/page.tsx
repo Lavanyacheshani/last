@@ -774,6 +774,11 @@ const destinationsData = {
         description: "Sri Lanka's tallest lighthouse at the southernmost point",
         icon: Landmark,
       },
+      {
+        title: "Hirikatiya Beach",
+        description: "Scenic beach known for its surf breaks and palm-fringed shores",
+        icon: Palmtree,
+      }
     ],
     gallery: [
       "/des/m11.jpg",

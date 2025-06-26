@@ -25,7 +25,7 @@ export function HeroSection() {
       title: t?.heroSlideTitle_nineArch || "Witness the Beauty of Nine Arch Bridge",
     },
     {
-      image: "/hero/3.jpg",
+      image: "/hero/beauty-of-hikkaduwa-beach.webp",
       alt: t?.heroSlideAlt_beaches || "Tropical Beach in Sri Lanka",
       title: t?.heroSlideTitle_beaches || "Relax on Stunning Sri Lankan Beaches",
     },

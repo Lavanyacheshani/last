@@ -46,6 +46,7 @@ export function BookingForm() {
     "Mirissa",
     "Bentota",
     "Hikkaduwa",
+    "Adams Peak",
   ]
 
   const handleDestinationChange = (destination: string) => {

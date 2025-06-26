@@ -236,7 +236,7 @@ export function PackagesSection() {
                     hover:shadow-xl transition-all duration-300 
                     transform hover:-translate-y-0.5`}
                   >
-                    <a href={`/#booking?package=${pkg.id}`} className="text-sm md:text-base">
+                    <a href="/#booking" className="text-sm md:text-base">
                       Book This Package
                     </a>
                   </Button>

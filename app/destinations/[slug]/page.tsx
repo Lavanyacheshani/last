@@ -11,7 +11,6 @@ import { BackButton } from "@/components/back-button"
 import { useLanguage } from "@/components/language-context"
 import { motion } from "framer-motion"
 import { useParams } from "next/navigation"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import {
   Calendar,

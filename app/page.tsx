@@ -1,5 +1,6 @@
 "use client"
 
+import { Suspense } from "react"
 import { BookingForm } from "@/components/booking-form"
 import { CustomerFeedback } from "@/components/customer-feedback"
 import { DestinationsSection } from "@/components/destinations-section"
@@ -14,7 +15,7 @@ import { FeedbackButton } from "@/components/feedback-button"
 import Image from "next/image"
 import { useSearchParams } from "next/navigation"
 
-export default function Home() {
+function HomeContent() {
   const searchParams = useSearchParams();
   const defaultPackageType = searchParams.get("package") || undefined;
   return (
@@ -35,5 +36,13 @@ export default function Home() {
       <Footer />
       <FloatingButtons />
     </div>
+  )
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={null}>
+      <HomeContent />
+    </Suspense>
   )
 }

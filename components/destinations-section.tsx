@@ -74,6 +74,13 @@ export function DestinationsSection() {
       image: "/des/yala-main.jpg",
       description: "Sri Lanka’s premier national park, famous for leopards, elephants, and diverse wildlife.",
     },
+    // Add Polonnaruwa as the last destination
+    {
+      name: "Polonnaruwa",
+      slug: "polonnaruwa",
+      image: "/des/polon.jpg", // Make sure this image exists in the public/des folder
+      description: "Ancient city with impressive ruins, royal palaces, and remarkable Buddhist monuments.",
+    },
   ]
 
   return (

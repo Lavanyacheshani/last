@@ -778,7 +778,7 @@ const destinationsData = {
         title: "Hirikatiya Beach",
         description: "Scenic beach known for its surf breaks and palm-fringed shores",
         icon: Palmtree,
-      }
+      },
     ],
     gallery: [
       "/des/m11.jpg",
@@ -905,6 +905,54 @@ In addition to its rich biodiversity, Yala is home to ancient ruins and religiou
       "Cultural Visits",
     ],
   },
+  polonnaruwa: {
+    name: "Polonnaruwa",
+    image: "/des/polon.jpg",
+    themeBg: "cultural", 
+    description: "Ancient city with impressive ruins, royal palaces, and remarkable Buddhist monuments.",
+    fullDescription: `Polonnaruwa is a UNESCO World Heritage site and was the second capital of Sri Lanka after the destruction of Anuradhapura. The city is renowned for its well-preserved ruins, including royal palaces, temples, and giant Buddha statues.`,
+    highlights: [
+      { title: "Royal Palace", description: "Ruins of the ancient royal residence.", icon: Building },
+      { title: "Gal Vihara", description: "Famous group of Buddha statues carved from granite.", icon: Landmark },
+      { title: "Parakrama Samudra", description: "Massive ancient reservoir.", icon: Waves },
+      // Add more highlights as needed
+    ],
+    gallery: [
+      "/des/pol2.jpeg",
+      "/des/pol3.webp",
+      "/des/pol4.jpg"
+    ],
+    thingsToDo: [
+      {
+        title: "Explore the Ancient City",
+        description: "Walk or cycle among the ruins of palaces, temples, and statues.",
+        image: "/des/pol11.jpg",
+      },
+      {
+        title: "Visit the Gal Vihara",
+        description: "See the impressive rock-carved Buddha statues at this UNESCO World Heritage site.",
+        image: "/des/pol22.jpg",
+      },
+      {
+        title: "Cycle around Parakrama Samudra",
+        description: "Enjoy a scenic ride around the ancient reservoir built by King Parakramabahu I.",
+        image: "/des/pol33.jpg",
+      },
+      {
+        title: "Visit the Royal Palace",
+        description: "Explore the ruins of the ancient royal residence and its impressive architecture.",
+        image: "/des/pol44.webp",
+      }
+      
+      // Add more activities as needed
+    ],
+    popularActivities: [
+      "Historical Tours",
+      "Cycling",
+      "Photography",
+      "Temple Visits",
+    ],
+  }, 
 }
 
 // Helper function to get background gradient based on theme

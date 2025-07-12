@@ -944,7 +944,6 @@ In addition to its rich biodiversity, Yala is home to ancient ruins and religiou
         image: "/des/pol44.webp",
       }
       
-      // Add more activities as needed
     ],
     popularActivities: [
       "Historical Tours",

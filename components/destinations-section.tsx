@@ -13,7 +13,7 @@ export function DestinationsSection() {
   // Add window resize listener
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsBelowDesktop(window.innerWidth < 1024) // 1024px is the 'lg' breakpoint
+      setIsBelowDesktop(window.innerWidth < 1024)
     }
     
     checkScreenSize() // Check on initial render

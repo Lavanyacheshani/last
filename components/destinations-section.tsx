@@ -4,8 +4,24 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin } from "lucide-react"
 import { SectionHeading } from "@/components/section-heading"
+import { useState, useEffect } from "react"
 
 export function DestinationsSection() {
+  const [showAll, setShowAll] = useState(false)
+  const [isBelowDesktop, setIsBelowDesktop] = useState(false)
+
+  // Add window resize listener
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsBelowDesktop(window.innerWidth < 1024) // 1024px is the 'lg' breakpoint
+    }
+    
+    checkScreenSize() // Check on initial render
+    window.addEventListener('resize', checkScreenSize)
+    
+    return () => window.removeEventListener('resize', checkScreenSize)
+  }, [])
+
   const destinations = [
     {
       name: "Galle",
@@ -83,6 +99,11 @@ export function DestinationsSection() {
     },
   ]
 
+  // Determine how many destinations to show
+  const visibleDestinations = (!showAll && isBelowDesktop) 
+    ? destinations.slice(0, 5) 
+    : destinations
+
   return (
     <section className="py-8 md:py-16 bg-gradient-to-b from-gray-50 to-white scroll-mt-24" id="destinations">
       <div className="container mx-auto px-4">
@@ -92,7 +113,7 @@ export function DestinationsSection() {
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {destinations.map((destination, index) => (
+          {visibleDestinations.map((destination, index) => (
             <Card
               key={index}
               className="overflow-hidden hover:shadow-lg transition-shadow group border-0 bg-transparent card-hover"
@@ -129,6 +150,19 @@ export function DestinationsSection() {
             </Card>
           ))}
         </div>
+        
+        {/* Show button on all screens below desktop size */}
+        {isBelowDesktop && !showAll && destinations.length > 5 && (
+          <div className="flex justify-center mt-6">
+            <Button 
+              onClick={() => setShowAll(true)} 
+              variant="outline"
+              className="bg-gradient-to-r from-maroon-50 to-maroon-100 hover:from-maroon-100 hover:to-maroon-200 border-maroon-200 text-maroon-800"
+            >
+              View More Destinations
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   )

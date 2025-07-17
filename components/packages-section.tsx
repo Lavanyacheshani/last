@@ -123,7 +123,7 @@ export function PackagesSection() {
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white" id="packages">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white scroll-mt-24" id="packages">
       <div className="container mx-auto px-4">
         <SectionHeading
           title="Travel Packages"

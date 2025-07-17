@@ -84,7 +84,7 @@ export function DestinationsSection() {
   ]
 
   return (
-    <section className="py-8 md:py-16 bg-gradient-to-b from-gray-50 to-white" id="destinations">
+    <section className="py-8 md:py-16 bg-gradient-to-b from-gray-50 to-white scroll-mt-24" id="destinations">
       <div className="container mx-auto px-4">
         <SectionHeading
           title="Explore Our Destinations"

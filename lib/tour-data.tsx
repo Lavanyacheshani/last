@@ -83,7 +83,7 @@ export const tourCategories = [
         image: "/tour/5.PNG",
         images: [
           "/des/k1.jpg",
-          "/des/k3.jpg",
+          "/des/k3.JPG",
         ],
         highlights: [
           "Temple of the Sacred Tooth Relic - Most revered Buddhist site in Sri Lanka",

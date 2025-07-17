@@ -265,7 +265,7 @@ const destinationsData = {
         title: "Explore the Royal Botanical Gardens",
         description:
           "Wander through one of Asia's most impressive botanical gardens in nearby Peradeniya, featuring over 4,000 plant species including a magnificent avenue of royal palms.",
-        image: "/des/k4.jpg",
+        image: "/des/K4.jpg",
       },
       
     ],

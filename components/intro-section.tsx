@@ -8,7 +8,7 @@ export function IntroSection() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-16 bg-white relative" id="about">
+    <section className="py-16 bg-white relative scroll-mt-24" id="about">
       <div className="container mx-auto px-4">
         <SectionHeading title={t?.introTitle || "Welcome to Explorative Tours!"} decorative={true} />
 

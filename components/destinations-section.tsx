@@ -10,7 +10,6 @@ export function DestinationsSection() {
   const [showAll, setShowAll] = useState(false)
   const [isBelowDesktop, setIsBelowDesktop] = useState(false)
 
-  // Add window resize listener
   useEffect(() => {
     const checkScreenSize = () => {
       setIsBelowDesktop(window.innerWidth < 1024)

@@ -1,7 +1,41 @@
+"use client"
 import Link from "next/link"
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
+import { useRouter, usePathname } from "next/navigation"
+import { useEffect } from "react"
 
 export function Footer() {
+  const router = useRouter()
+  const pathname = usePathname()
+  // Helper for anchor navigation
+  const handleNav = (anchor: string) => (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault()
+    if (pathname !== "/") {
+      sessionStorage.setItem("scrollToAnchor", anchor)
+      router.push(`/#${anchor}`, { scroll: false })
+    } else {
+      const el = document.getElementById(anchor)
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" })
+      }
+    }
+  }
+
+  // Scroll to anchor after navigation if needed
+  useEffect(() => {
+    if (pathname === "/") {
+      const anchor = sessionStorage.getItem("scrollToAnchor")
+      if (anchor) {
+        const el = document.getElementById(anchor)
+        if (el) {
+          setTimeout(() => {
+            el.scrollIntoView({ behavior: "smooth" })
+          }, 100)
+        }
+        sessionStorage.removeItem("scrollToAnchor")
+      }
+    }
+  }, [pathname])
   return (
     <footer className="bg-gray-800 text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
@@ -41,7 +75,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#destinations" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/#destinations" className="text-gray-300 hover:text-white transition-colors" onClick={handleNav('destinations')}>
                   Destinations
                 </Link>
               </li>
@@ -51,12 +85,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#packages" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/#packages" className="text-gray-300 hover:text-white transition-colors" onClick={handleNav('packages')}>
                   Travel Packages
                 </Link>
               </li>
               <li>
-                <Link href="/#booking" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/#booking" className="text-gray-300 hover:text-white transition-colors" onClick={handleNav('booking')}>
                   Book Now
                 </Link>
               </li>

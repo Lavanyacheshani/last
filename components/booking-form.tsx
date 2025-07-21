@@ -130,7 +130,7 @@ export function BookingForm() {
   }
 
   return (
-    <section className="py-16 bg-white" id="booking">
+    <section className="py-16 bg-white scroll-mt-24" id="booking">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Book Your Sri Lankan Adventure</h2>

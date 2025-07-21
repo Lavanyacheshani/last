@@ -1,16 +1,50 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image" // Add this import
 import { Menu, X } from "lucide-react"
 import { LanguageSwitcher } from "./language-switcher"
 import { SriLankaTime } from "./sri-lanka-time"
 import { useLanguage } from "./language-context"
+import { useRouter, usePathname } from "next/navigation"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { t } = useLanguage()
+  const router = useRouter()
+  const pathname = usePathname()
+
+  // Helper for anchor navigation
+  const handleNav = (anchor: string) => (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault()
+    if (pathname !== "/") {
+      sessionStorage.setItem("scrollToAnchor", anchor)
+      router.push(`/#${anchor}`, { scroll: false })
+    } else {
+      const el = document.getElementById(anchor)
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" })
+      }
+    }
+    setIsMenuOpen(false)
+  }
+
+  // Scroll to anchor after navigation if needed
+  useEffect(() => {
+    if (pathname === "/") {
+      const anchor = sessionStorage.getItem("scrollToAnchor")
+      if (anchor) {
+        const el = document.getElementById(anchor)
+        if (el) {
+          setTimeout(() => {
+            el.scrollIntoView({ behavior: "smooth" })
+          }, 100)
+        }
+        sessionStorage.removeItem("scrollToAnchor")
+      }
+    }
+  }, [pathname])
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -49,13 +83,13 @@ export function Header() {
             <Link href="/#about" className="text-gray-700 hover:text-emerald-600 font-medium">
               {t?.about || "About Us"}
             </Link>
-            <Link href="/#destinations" className="text-gray-700 hover:text-emerald-600 font-medium">
+            <Link href="/#destinations" className="text-gray-700 hover:text-emerald-600 font-medium" onClick={handleNav('destinations')}>
               {t?.destinations || "Destinations"}
             </Link>
             <Link href="/tours" className="text-gray-700 hover:text-emerald-600 font-medium">
               {t?.toursActivities || "Tours & Activities"}
             </Link>
-            <Link href="/#packages" className="text-gray-700 hover:text-emerald-600 font-medium">
+            <Link href="/#packages" className="text-gray-700 hover:text-emerald-600 font-medium" onClick={handleNav('packages')}>
               {t?.packages || "Travel Packages"}
             </Link>
             
@@ -92,7 +126,7 @@ export function Header() {
             <Link
               href="/#destinations"
               className="block text-gray-700 hover:text-emerald-600 font-medium"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={handleNav('destinations')}
             >
               {t?.destinations || "Destinations"}
             </Link>
@@ -106,7 +140,7 @@ export function Header() {
             <Link
               href="/#packages"
               className="block text-gray-700 hover:text-emerald-600 font-medium"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={handleNav('packages')}
             >
               {t?.packages || "Travel Packages"}
             </Link>
